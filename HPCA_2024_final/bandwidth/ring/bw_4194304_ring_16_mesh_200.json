@@ -1,0 +1,79 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/configs/google.cfg",
+        "num_hmcs": 16,
+        "num_vaults": 16,
+        "mini_batch_size": 256,
+        "network": "/alexnet.csv",
+        "run_name": "bw_4194304",
+        "outdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/bandwidth/ring/outputs/bw_4194304",
+        "dump": false,
+        "allreduce": "ring",
+        "booksim_config": "/scratch/user/sabuj.laskar/MeshFermat/src/booksim2/runfiles/mesh/anynet_mesh_16_200.cfg",
+        "booksim_network": "mesh",
+        "verbose": true,
+        "only_compute": false,
+        "only_allreduce": true,
+        "only_reduce_scatter": false,
+        "only_all_gather": false,
+        "message_buffer_size": 32,
+        "message_size": 8192,
+        "sub_message_size": 8192,
+        "synthetic_data_size": 4194304,
+        "flits_per_packet": 16,
+        "bandwidth": 200,
+        "load_tree": true,
+        "kary": 5,
+        "radix": 4,
+        "strict_schedule": true,
+        "prioritize_schedule": true,
+        "oracle_lockstep": false,
+        "estimate_lockstep": false,
+        "enable_logger": [],
+        "latency": 21,
+        "per_message_time": 357,
+        "pe_array_height": 256,
+        "pe_array_width": 256,
+        "ifmap_sram_size": 8388608,
+        "filter_sram_size": 8388608,
+        "ofmap_sram_size": 8388608,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "logdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/bandwidth/ring/outputs/bw_4194304",
+        "nodes": 16
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "allreduce": {
+                "computation": 960,
+                "pure_communication": 1371187,
+                "total": 1372147
+            },
+            "total": 1372147
+        },
+        "power": {
+            "network": {
+                "dynamic": 0.1457288956088637,
+                "static": 2.936889715867014,
+                "total": 3.0826186114758776,
+                "router": {
+                    "dynamic": 0.13786365078581728,
+                    "static": 2.929789381787014,
+                    "total": 3.067653032572831
+                },
+                "link": {
+                    "dynamic": 0.007865244823046432,
+                    "static": 0.007100334079999993,
+                    "total": 0.014965578903046426,
+                    "flits": 1044480
+                }
+            }
+        }
+    }
+}

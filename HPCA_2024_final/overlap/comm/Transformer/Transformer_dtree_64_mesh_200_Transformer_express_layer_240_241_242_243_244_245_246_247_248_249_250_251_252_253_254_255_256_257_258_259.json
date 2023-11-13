@@ -1,0 +1,106 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/configs/express.cfg",
+        "num_hmcs": 64,
+        "num_vaults": 16,
+        "mini_batch_size": 1024,
+        "network": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/topologies/mlperf/Transformer.csv",
+        "run_name": "Transformer",
+        "outdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/comm_overlap_3/outputs/Transformer",
+        "dump": false,
+        "allreduce": "dtree",
+        "booksim_config": "/scratch/user/sabuj.laskar/MeshFermat/src/booksim2/runfiles/mesh/anynet_mesh_64_200.cfg",
+        "booksim_network": "mesh",
+        "verbose": true,
+        "only_compute": false,
+        "only_allreduce": true,
+        "only_reduce_scatter": false,
+        "only_all_gather": false,
+        "message_buffer_size": 32,
+        "message_size": 8192,
+        "sub_message_size": 8192,
+        "synthetic_data_size": 0,
+        "flits_per_packet": 16,
+        "bandwidth": 200,
+        "load_tree": false,
+        "kary": 2,
+        "radix": 1,
+        "chunk_size": 0,
+        "strict_schedule": true,
+        "prioritize_schedule": true,
+        "oracle_lockstep": false,
+        "estimate_lockstep": false,
+        "enable_logger": [],
+        "save_link_utilization": false,
+        "layer_by_layer": true,
+        "layer_number": "240_241_242_243_244_245_246_247_248_249_250_251_252_253_254_255_256_257_258_259",
+        "latency": 21,
+        "per_message_time": 357,
+        "layer_number_list": [
+            240,
+            241,
+            242,
+            243,
+            244,
+            245,
+            246,
+            247,
+            248,
+            249,
+            250,
+            251,
+            252,
+            253,
+            254,
+            255,
+            256,
+            257,
+            258,
+            259
+        ],
+        "pe_array_height": 32,
+        "pe_array_width": 32,
+        "ifmap_sram_size": 1048576,
+        "filter_sram_size": 1048576,
+        "ofmap_sram_size": 1048576,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "logdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/comm_overlap_3/outputs/Transformer",
+        "nodes": 64
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "training_by_layer": null,
+            "allreduce": {
+                "computation": 6388,
+                "pure_communication": 2318487,
+                "total": 2324875
+            },
+            "total": 2324875
+        },
+        "power": {
+            "network": {
+                "dynamic": 0.43947224617435743,
+                "static": 11.747558863468045,
+                "total": 12.187031109642403,
+                "router": {
+                    "dynamic": 0.4242403935519942,
+                    "static": 11.719157527148045,
+                    "total": 12.143397920700039
+                },
+                "link": {
+                    "dynamic": 0.015231852622363222,
+                    "static": 0.028401336319999974,
+                    "total": 0.0436331889423632,
+                    "flits": 1849600
+                }
+            }
+        }
+    }
+}

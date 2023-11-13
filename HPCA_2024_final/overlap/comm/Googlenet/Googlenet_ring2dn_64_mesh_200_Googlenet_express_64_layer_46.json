@@ -1,0 +1,86 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/configs/express_64.cfg",
+        "num_hmcs": 64,
+        "num_vaults": 16,
+        "mini_batch_size": 1024,
+        "network": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/topologies/conv_nets/Googlenet.csv",
+        "run_name": "Googlenet",
+        "outdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/comm_overlap_2/outputs/Googlenet",
+        "dump": false,
+        "allreduce": "ring2dn",
+        "booksim_config": "/scratch/user/sabuj.laskar/MeshFermat/src/booksim2/runfiles/mesh/anynet_mesh_64_200.cfg",
+        "booksim_network": "mesh",
+        "verbose": true,
+        "only_compute": false,
+        "only_allreduce": true,
+        "only_reduce_scatter": false,
+        "only_all_gather": false,
+        "message_buffer_size": 32,
+        "message_size": 8192,
+        "sub_message_size": 8192,
+        "synthetic_data_size": 0,
+        "flits_per_packet": 16,
+        "bandwidth": 200,
+        "load_tree": false,
+        "kary": 5,
+        "radix": 4,
+        "chunk_size": 0,
+        "strict_schedule": false,
+        "prioritize_schedule": false,
+        "oracle_lockstep": false,
+        "estimate_lockstep": false,
+        "enable_logger": [],
+        "save_link_utilization": false,
+        "layer_by_layer": true,
+        "layer_number": "46",
+        "latency": 21,
+        "per_message_time": 357,
+        "layer_number_list": [
+            46
+        ],
+        "pe_array_height": 64,
+        "pe_array_width": 64,
+        "ifmap_sram_size": 2097152,
+        "filter_sram_size": 2097152,
+        "ofmap_sram_size": 2097152,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "logdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/comm_overlap_2/outputs/Googlenet",
+        "nodes": 64
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "allreduce": {
+                "computation": 280,
+                "pure_communication": 36853,
+                "total": 37133
+            },
+            "total": 37133
+        },
+        "power": {
+            "network": {
+                "dynamic": 0.9009441763782984,
+                "static": 11.747558863468045,
+                "total": 12.648503039846343,
+                "router": {
+                    "dynamic": 0.8267728029795905,
+                    "static": 11.719157527148045,
+                    "total": 12.545930330127636
+                },
+                "link": {
+                    "dynamic": 0.07417137339870777,
+                    "static": 0.028401336319999974,
+                    "total": 0.10257270971870774,
+                    "flits": 266560
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+__pycache__
+*.so
+*.a
+*.dot
+*_link
+*.zip
+*.log
+*.pkl
+
+.idea
+results/micro2023_final (copy)
+error_to_chceck
+results_from_hprc
+results

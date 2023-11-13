@@ -1,0 +1,79 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/configs/google.cfg",
+        "num_hmcs": 256,
+        "num_vaults": 16,
+        "mini_batch_size": 4096,
+        "network": "/alexnet.csv",
+        "run_name": "scalability",
+        "outdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/scalability/multitree/outputs/scalability",
+        "dump": false,
+        "allreduce": "multitree",
+        "booksim_config": "/scratch/user/sabuj.laskar/MeshFermat/src/booksim2/runfiles/mesh/anynet_mesh_256_200.cfg",
+        "booksim_network": "mesh",
+        "verbose": true,
+        "only_compute": false,
+        "only_allreduce": true,
+        "only_reduce_scatter": false,
+        "only_all_gather": false,
+        "message_buffer_size": 32,
+        "message_size": 8192,
+        "sub_message_size": 8192,
+        "synthetic_data_size": 24576000,
+        "flits_per_packet": 16,
+        "bandwidth": 200,
+        "load_tree": true,
+        "kary": 5,
+        "radix": 4,
+        "strict_schedule": true,
+        "prioritize_schedule": true,
+        "oracle_lockstep": false,
+        "estimate_lockstep": false,
+        "enable_logger": [],
+        "latency": 21,
+        "per_message_time": 357,
+        "pe_array_height": 256,
+        "pe_array_width": 256,
+        "ifmap_sram_size": 8388608,
+        "filter_sram_size": 8388608,
+        "ofmap_sram_size": 8388608,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "logdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/scalability/multitree/outputs/scalability",
+        "nodes": 256
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "allreduce": {
+                "computation": 6520,
+                "pure_communication": 4702773,
+                "total": 4709293
+            },
+            "total": 4709293
+        },
+        "power": {
+            "network": {
+                "dynamic": 3.0989107909105704,
+                "static": 46.990235453872415,
+                "total": 50.08914624478299,
+                "router": {
+                    "dynamic": 2.8700274465385327,
+                    "static": 46.87663010859241,
+                    "total": 49.74665755513094
+                },
+                "link": {
+                    "dynamic": 0.2288833443720379,
+                    "static": 0.11360534528000503,
+                    "total": 0.34248868965204293,
+                    "flits": 104317440
+                }
+            }
+        }
+    }
+}

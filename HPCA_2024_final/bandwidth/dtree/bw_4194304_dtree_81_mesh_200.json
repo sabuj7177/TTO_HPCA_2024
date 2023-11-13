@@ -1,0 +1,80 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/configs/google.cfg",
+        "num_hmcs": 81,
+        "num_vaults": 16,
+        "mini_batch_size": 1280,
+        "network": "/alexnet.csv",
+        "run_name": "bw_4194304",
+        "outdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024_new/bandwidth/dtree/outputs/bw_4194304",
+        "dump": false,
+        "allreduce": "dtree",
+        "booksim_config": "/scratch/user/sabuj.laskar/MeshFermat/src/booksim2/runfiles/mesh/anynet_mesh_81_200.cfg",
+        "booksim_network": "mesh",
+        "verbose": true,
+        "only_compute": false,
+        "only_allreduce": true,
+        "only_reduce_scatter": false,
+        "only_all_gather": false,
+        "message_buffer_size": 32,
+        "message_size": 8192,
+        "sub_message_size": 8192,
+        "synthetic_data_size": 4194304,
+        "flits_per_packet": 16,
+        "bandwidth": 200,
+        "load_tree": true,
+        "kary": 2,
+        "radix": 1,
+        "strict_schedule": true,
+        "prioritize_schedule": true,
+        "oracle_lockstep": false,
+        "estimate_lockstep": false,
+        "enable_logger": [],
+        "save_link_utilization": false,
+        "latency": 21,
+        "per_message_time": 357,
+        "pe_array_height": 256,
+        "pe_array_width": 256,
+        "ifmap_sram_size": 8388608,
+        "filter_sram_size": 8388608,
+        "ofmap_sram_size": 8388608,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "logdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024_new/bandwidth/dtree/outputs/bw_4194304",
+        "nodes": 81
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "allreduce": {
+                "computation": 1040,
+                "pure_communication": 5249737,
+                "total": 5250777
+            },
+            "total": 5250777
+        },
+        "power": {
+            "network": {
+                "dynamic": 0.5208836425175405,
+                "static": 14.86800418657674,
+                "total": 15.388887829094282,
+                "router": {
+                    "dynamic": 0.5098895658697197,
+                    "static": 14.83205874529674,
+                    "total": 15.34194831116646
+                },
+                "link": {
+                    "dynamic": 0.01099407664782087,
+                    "static": 0.03594544128000026,
+                    "total": 0.04693951792782113,
+                    "flits": 5233280
+                }
+            }
+        }
+    }
+}

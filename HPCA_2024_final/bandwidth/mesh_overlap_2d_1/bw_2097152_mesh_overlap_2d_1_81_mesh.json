@@ -1,0 +1,82 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/configs/google.cfg",
+        "num_hmcs": 81,
+        "num_vaults": 16,
+        "mini_batch_size": 1296,
+        "network": "/alexnet.csv",
+        "run_name": "bw_2097152",
+        "outdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/bandwidth/mesh_overlap_2d_1/outputs/bw_2097152",
+        "dump": false,
+        "allreduce": "mesh_overlap_2d_1",
+        "booksim_config": "/scratch/user/sabuj.laskar/MeshFermat/src/booksim2/runfiles/mesh/anynet_mesh_81_200.cfg",
+        "booksim_network": "mesh",
+        "verbose": true,
+        "only_compute": false,
+        "only_allreduce": true,
+        "only_reduce_scatter": false,
+        "only_all_gather": false,
+        "message_buffer_size": 32,
+        "message_size": 8192,
+        "sub_message_size": 8192,
+        "synthetic_data_size": 2097152,
+        "flits_per_packet": 16,
+        "bandwidth": 200,
+        "load_tree": true,
+        "kary": 5,
+        "radix": 4,
+        "strict_schedule": true,
+        "prioritize_schedule": true,
+        "oracle_lockstep": false,
+        "estimate_lockstep": false,
+        "enable_logger": [],
+        "latency": 21,
+        "per_message_time": 357,
+        "pe_array_height": 256,
+        "pe_array_width": 256,
+        "ifmap_sram_size": 8388608,
+        "filter_sram_size": 8388608,
+        "ofmap_sram_size": 8388608,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "logdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/bandwidth/mesh_overlap_2d_1/outputs/bw_2097152",
+        "chunk_size": 24576,
+        "total_partial_trees": 86,
+        "partial_tree_message": 4,
+        "nodes": 81
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "allreduce": {
+                "computation": 688,
+                "pure_communication": 290251,
+                "total": 290939
+            },
+            "total": 290939
+        },
+        "power": {
+            "network": {
+                "dynamic": 1.18048909296235,
+                "static": 14.86800418657674,
+                "total": 16.04849327953909,
+                "router": {
+                    "dynamic": 1.0812129490036497,
+                    "static": 14.83205874529674,
+                    "total": 15.91327169430039
+                },
+                "link": {
+                    "dynamic": 0.09927614395870014,
+                    "static": 0.03594544128000026,
+                    "total": 0.1352215852387004,
+                    "flits": 2795344
+                }
+            }
+        }
+    }
+}

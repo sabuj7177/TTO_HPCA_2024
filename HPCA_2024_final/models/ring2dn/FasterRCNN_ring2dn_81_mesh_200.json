@@ -1,0 +1,79 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/configs/google.cfg",
+        "num_hmcs": 81,
+        "num_vaults": 16,
+        "mini_batch_size": 1296,
+        "network": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/topologies/mlperf/FasterRCNN.csv",
+        "run_name": "FasterRCNN",
+        "outdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/models/ring2dn/outputs/FasterRCNN",
+        "dump": false,
+        "allreduce": "ring2dn",
+        "booksim_config": "/scratch/user/sabuj.laskar/MeshFermat/src/booksim2/runfiles/mesh/anynet_mesh_81_200.cfg",
+        "booksim_network": "mesh",
+        "verbose": true,
+        "only_compute": false,
+        "only_allreduce": true,
+        "only_reduce_scatter": false,
+        "only_all_gather": false,
+        "message_buffer_size": 32,
+        "message_size": 8192,
+        "sub_message_size": 8192,
+        "synthetic_data_size": 0,
+        "flits_per_packet": 16,
+        "bandwidth": 200,
+        "load_tree": true,
+        "kary": 5,
+        "radix": 4,
+        "strict_schedule": false,
+        "prioritize_schedule": false,
+        "oracle_lockstep": false,
+        "estimate_lockstep": false,
+        "enable_logger": [],
+        "latency": 21,
+        "per_message_time": 357,
+        "pe_array_height": 256,
+        "pe_array_width": 256,
+        "ifmap_sram_size": 8388608,
+        "filter_sram_size": 8388608,
+        "ofmap_sram_size": 8388608,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "logdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/models/ring2dn/outputs/FasterRCNN",
+        "nodes": 81
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "allreduce": {
+                "computation": 6388,
+                "pure_communication": 4411509,
+                "total": 4417897
+            },
+            "total": 4417897
+        },
+        "power": {
+            "network": {
+                "dynamic": 0.986959399924694,
+                "static": 14.86800418657674,
+                "total": 15.854963586501434,
+                "router": {
+                    "dynamic": 0.9136737788887158,
+                    "static": 14.83205874529674,
+                    "total": 15.745732524185456
+                },
+                "link": {
+                    "dynamic": 0.07328562103597817,
+                    "static": 0.03594544128000026,
+                    "total": 0.10923106231597843,
+                    "flits": 31334400
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "configuration": {
+        "arch_config": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/configs/express.cfg",
+        "num_hmcs": 36,
+        "num_vaults": 16,
+        "mini_batch_size": 576,
+        "network": "/scratch/user/sabuj.laskar/MeshFermat/src/SCALE-Sim/topologies/mlperf/NCF_recommendation.csv",
+        "run_name": "NCF_recommendation",
+        "outdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/simba/outputs/NCF_recommendation",
+        "dump": false,
+        "allreduce": "ring",
+        "booksim_config": "/scratch/user/sabuj.laskar/MeshFermat/src/booksim2/runfiles/mesh/anynet_mesh_36_200.cfg",
+        "booksim_network": "mesh",
+        "verbose": true,
+        "only_compute": false,
+        "only_allreduce": true,
+        "only_reduce_scatter": false,
+        "only_all_gather": false,
+        "message_buffer_size": 32,
+        "message_size": 8192,
+        "sub_message_size": 8192,
+        "synthetic_data_size": 0,
+        "flits_per_packet": 16,
+        "bandwidth": 200,
+        "load_tree": false,
+        "kary": 5,
+        "radix": 4,
+        "chunk_size": 0,
+        "strict_schedule": true,
+        "prioritize_schedule": true,
+        "oracle_lockstep": false,
+        "estimate_lockstep": false,
+        "enable_logger": [],
+        "save_link_utilization": false,
+        "layer_by_layer": false,
+        "layer_number": "0",
+        "latency": 21,
+        "per_message_time": 357,
+        "layer_number_list": [
+            0
+        ],
+        "pe_array_height": 32,
+        "pe_array_width": 32,
+        "ifmap_sram_size": 1048576,
+        "filter_sram_size": 1048576,
+        "ofmap_sram_size": 1048576,
+        "ifmap_offset": 0,
+        "filter_offset": 10000000,
+        "ofmap_offset": 20000000,
+        "ifmap_grad_offset": 40000000,
+        "filter_grad_offset": 50000000,
+        "ofmap_grad_offset": 30000000,
+        "data_flow": "os",
+        "logdir": "/scratch/user/sabuj.laskar/MeshFermat/results/HPCA2024/simba/outputs/NCF_recommendation",
+        "nodes": 36
+    },
+    "results": {
+        "performance": {
+            "training": 0,
+            "allreduce": {
+                "computation": 20964,
+                "pure_communication": 3746114,
+                "total": 3767078
+            },
+            "total": 3767078
+        },
+        "power": {
+            "network": {
+                "dynamic": 0.3273614004852356,
+                "static": 6.608001860700779,
+                "total": 6.935363261186015,
+                "router": {
+                    "dynamic": 0.3097355911725347,
+                    "static": 6.592026109020779,
+                    "total": 6.901761700193314
+                },
+                "link": {
+                    "dynamic": 0.017625809312700913,
+                    "static": 0.015975751679999987,
+                    "total": 0.033601560992700896,
+                    "flits": 6426000
+                }
+            }
+        }
+    }
+}
