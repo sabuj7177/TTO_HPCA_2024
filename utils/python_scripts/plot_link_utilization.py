@@ -4,6 +4,9 @@ import pickle
 
 import matplotlib.pyplot as plt
 
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
+
 
 class DrawLinkUtilization:
 
@@ -78,6 +81,8 @@ class DrawLinkUtilization:
                     sim = json.load(json_file)
                     if sim['results']['performance']['total'] > max_time:
                         max_time = sim['results']['performance']['total']
+            else:
+                print("File missing: " + str(filename))
 
         for s, name in enumerate(names):
             if name == 'multitree' or name == 'ring_bi' or name == 'ring' or name == 'ring_odd' or name == 'ring_odd_bi' or name == 'ring2dn':
@@ -96,7 +101,7 @@ def main():
     tree = DrawLinkUtilization()
     plt.rcParams["figure.figsize"] = [16.00, 5.0]
     plt.rcParams["figure.autolayout"] = True
-    plt.rcParams['font.family'] = ['serif']
+    # plt.rcParams['font.family'] = ['serif']
     plt.rcParams['font.size'] = 24
     figure, ax1 = plt.subplots(1, 3, sharex=True, sharey=True)
     dataSize = 67108864
@@ -125,7 +130,7 @@ def main():
     labels.extend(labels3)
     figure.legend(lines, labels, loc='upper center', ncol=3, bbox_to_anchor=(0.5, 1.2))
 
-    figure.savefig('link_utilization.pdf', bbox_inches='tight')
+    figure.savefig('link_utl.pdf', bbox_inches='tight')
 
 
 if __name__ == '__main__':

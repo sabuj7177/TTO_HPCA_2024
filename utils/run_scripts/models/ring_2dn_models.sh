@@ -7,7 +7,7 @@ mlperfdir=$SIMHOME/src/SCALE-Sim/topologies/mlperf
 cnndir=$SIMHOME/src/SCALE-Sim/topologies/conv_nets
 
 for nnpath in $mlperfdir/AlphaGoZero $mlperfdir/FasterRCNN $mlperfdir/NCF_recommendation \
-  $mlperfdir/Resnet152 $mlperfdir/Transformer $mlperfdir/dlrm \
+  $mlperfdir/Resnet152 $mlperfdir/Transformer \
   $cnndir/alexnet $cnndir/Googlenet
 do
   nn=$(basename $nnpath)
@@ -55,3 +55,5 @@ do
       --radix 4 \
       > $outdir/${nn}_ring2dn_81_error.log 2>&1 &
 done
+
+wait

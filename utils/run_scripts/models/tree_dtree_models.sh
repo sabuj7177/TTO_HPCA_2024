@@ -1,13 +1,13 @@
 #!/bin/bash
 
-outdir=$SIMHOME/HPCA2024_new/models/dtre
+outdir=$SIMHOME/HPCA2024/models/dtre
 
 mkdir -p $outdir
 mlperfdir=$SIMHOME/src/SCALE-Sim/topologies/mlperf
 cnndir=$SIMHOME/src/SCALE-Sim/topologies/conv_nets
 
 for nnpath in $mlperfdir/AlphaGoZero $mlperfdir/FasterRCNN $mlperfdir/NCF_recommendation \
-  $mlperfdir/Resnet152 $mlperfdir/Transformer $mlperfdir/dlrm \
+  $mlperfdir/Resnet152 $mlperfdir/Transformer \
   $cnndir/alexnet $cnndir/Googlenet
 do
   nn=$(basename $nnpath)
@@ -59,3 +59,5 @@ do
       --prioritize-schedule \
       > $outdir/${nn}_dtree_81_error.log 2>&1 &
 done
+
+wait

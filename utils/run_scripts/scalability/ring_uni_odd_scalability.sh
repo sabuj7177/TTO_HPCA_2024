@@ -29,3 +29,5 @@ for i in ${!totalNodes[@]}; do
       --prioritize-schedule \
       > $outdir/scalability_${totalNodes[$i]}_ring_error.log 2>&1 &
 done
+
+wait

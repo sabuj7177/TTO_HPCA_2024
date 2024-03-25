@@ -4,8 +4,10 @@ import os
 
 import matplotlib.pyplot as plt
 
-plt.rcParams['font.family'] = ['serif']
+# plt.rcParams['font.family'] = ['serif']
 plt.rcParams['font.size'] = 20
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
 
 def draw_graph(ax, schemes, names, ldata, xlabels, total_nodes, folder_path):
     gbps = {}
@@ -21,9 +23,12 @@ def draw_graph(ax, schemes, names, ldata, xlabels, total_nodes, folder_path):
                     comm_cycles[name][data] = []
 
                     filename = "%s/chunk_33554432_%d_%s_%d_mesh.json" % (folder_path, data, name, total_nodes)
-                    with open(filename, 'r') as json_file:
-                        sim = json.load(json_file)
-                        comm_cycles[name][data] = float(sim['results']['performance']['allreduce']['total'])
+                    if os.path.exists(filename):
+                        with open(filename, 'r') as json_file:
+                            sim = json.load(json_file)
+                            comm_cycles[name][data] = float(sim['results']['performance']['allreduce']['total'])
+                    else:
+                        print("File missing: " + str(filename))
 
     for s, name in enumerate(names):
         if name not in gbps.keys():

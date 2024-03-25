@@ -8,8 +8,10 @@ import numpy as np
 from easypyplot import barchart, pdf
 from easypyplot import format as fmt
 
-plt.rcParams['font.family'] = ['serif']
+# plt.rcParams['font.family'] = ['serif']
 plt.rcParams['font.size'] = 18
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
 
 
 def add_line(ax, xpos, ypos):
@@ -74,6 +76,7 @@ def draw_graph(ax, folder_path, names, total_nodes, schemes, folder_names):
                 norm_allreduce_cycles[s][b] = 1
                 cycles_breakdown[0][b * len(schemes) + s] = 1
                 cycles_breakdown[1][b * len(schemes) + s] = 1
+                print("File missing: " + str(filename))
 
 
     speedup = 1.0 / norm_cycles

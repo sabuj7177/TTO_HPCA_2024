@@ -30,3 +30,5 @@ for i in ${!totalNodes[@]}; do
       --prioritize-schedule \
       > $outdir/scalability_${totalNodes[$i]}_mesh_overlap_2d_1_error.log 2>&1 &
 done
+
+wait

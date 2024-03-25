@@ -8,6 +8,31 @@ mkdir -p $outdir
 for i in ${!syntheticDataSize[@]}; do
   python $SIMHOME/src/simulate.py \
       --arch-config $SIMHOME/src/SCALE-Sim/configs/google.cfg \
+      --num-hmcs 16 \
+      --num-vaults 16 \
+      --mini-batch-size 256 \
+      --network $cnndir/alexnet.csv \
+      --run-name "bw_${syntheticDataSize[$i]}" \
+      --outdir $outdir \
+      --allreduce multitree \
+      --booksim-config $SIMHOME/src/booksim2/runfiles/mesh/anynet_mesh_16_200.cfg \
+      --booksim-network mesh \
+      --only-allreduce \
+      --message-buffer-size 32 \
+      --message-size 8192 \
+      --sub-message-size 8192 \
+      --synthetic-data-size ${syntheticDataSize[$i]} \
+      --flits-per-packet 16 \
+      --bandwidth 200 \
+      --kary 5 \
+      --radix 4 \
+      --strict-schedule \
+      --prioritize-schedule \
+      --load-tree \
+      > $outdir/bw_${syntheticDataSize[$i]}_multitree_16_mesh_error.log 2>&1 &
+
+  python $SIMHOME/src/simulate.py \
+      --arch-config $SIMHOME/src/SCALE-Sim/configs/google.cfg \
       --num-hmcs 25 \
       --num-vaults 16 \
       --mini-batch-size 400 \
@@ -19,8 +44,8 @@ for i in ${!syntheticDataSize[@]}; do
       --booksim-network mesh \
       --only-allreduce \
       --message-buffer-size 32 \
-      --message-size 8000 \
-      --sub-message-size 8000 \
+      --message-size 8192 \
+      --sub-message-size 8192 \
       --synthetic-data-size ${syntheticDataSize[$i]} \
       --flits-per-packet 16 \
       --bandwidth 200 \
@@ -31,7 +56,32 @@ for i in ${!syntheticDataSize[@]}; do
       --load-tree \
       > $outdir/bw_${syntheticDataSize[$i]}_multitree_25_mesh_error.log 2>&1 &
 
-      python $SIMHOME/src/simulate.py \
+  python $SIMHOME/src/simulate.py \
+      --arch-config $SIMHOME/src/SCALE-Sim/configs/google.cfg \
+      --num-hmcs 64 \
+      --num-vaults 16 \
+      --mini-batch-size 1024 \
+      --network $cnndir/alexnet.csv \
+      --run-name "bw_${syntheticDataSize[$i]}" \
+      --outdir $outdir \
+      --allreduce multitree \
+      --booksim-config $SIMHOME/src/booksim2/runfiles/mesh/anynet_mesh_64_200.cfg \
+      --booksim-network mesh \
+      --only-allreduce \
+      --message-buffer-size 32 \
+      --message-size 8192 \
+      --sub-message-size 8192 \
+      --synthetic-data-size ${syntheticDataSize[$i]} \
+      --flits-per-packet 16 \
+      --bandwidth 200 \
+      --kary 5 \
+      --radix 4 \
+      --strict-schedule \
+      --prioritize-schedule \
+      --load-tree \
+      > $outdir/bw_${syntheticDataSize[$i]}_multitree_64_mesh_error.log 2>&1 &
+
+  python $SIMHOME/src/simulate.py \
       --arch-config $SIMHOME/src/SCALE-Sim/configs/google.cfg \
       --num-hmcs 81 \
       --num-vaults 16 \
@@ -44,8 +94,8 @@ for i in ${!syntheticDataSize[@]}; do
       --booksim-network mesh \
       --only-allreduce \
       --message-buffer-size 32 \
-      --message-size 8000 \
-      --sub-message-size 8000 \
+      --message-size 8192 \
+      --sub-message-size 8192 \
       --synthetic-data-size ${syntheticDataSize[$i]} \
       --flits-per-packet 16 \
       --bandwidth 200 \
@@ -56,3 +106,5 @@ for i in ${!syntheticDataSize[@]}; do
       --load-tree \
       > $outdir/bw_${syntheticDataSize[$i]}_multitree_81_mesh_error.log 2>&1 &
 done
+
+wait

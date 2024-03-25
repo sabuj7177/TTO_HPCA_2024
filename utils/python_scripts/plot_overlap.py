@@ -8,8 +8,10 @@ import numpy as np
 from easypyplot import barchart, pdf
 from easypyplot import format as fmt
 
-plt.rcParams['font.family'] = ['serif']
+# plt.rcParams['font.family'] = ['serif']
 plt.rcParams['font.size'] = 18
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
 
 
 def add_line(ax, xpos, ypos):

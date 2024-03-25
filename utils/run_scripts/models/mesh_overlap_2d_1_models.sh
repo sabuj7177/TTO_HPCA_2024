@@ -1,13 +1,13 @@
 #!/bin/bash
 
-outdir=$SIMHOME/HPCA_2024/models/mesh_overlap_2d_1
+outdir=$SIMHOME/HPCA2024/models/mesh_overlap_2d_1
 
 mkdir -p $outdir
 mlperfdir=$SIMHOME/src/SCALE-Sim/topologies/mlperf
 cnndir=$SIMHOME/src/SCALE-Sim/topologies/conv_nets
 
 for nnpath in $mlperfdir/AlphaGoZero $mlperfdir/FasterRCNN $mlperfdir/NCF_recommendation \
-  $mlperfdir/Resnet152 $mlperfdir/Transformer $mlperfdir/dlrm \
+  $mlperfdir/Resnet152 $mlperfdir/Transformer \
   $cnndir/alexnet $cnndir/Googlenet
 do
   nn=$(basename $nnpath)
@@ -35,7 +35,7 @@ do
       --prioritize-schedule \
       > $outdir/${nn}_mesh_overlap_2d_1_64_error.log 2>&1 &
 
-      python $SIMHOME/src/simulate.py \
+  python $SIMHOME/src/simulate.py \
       --arch-config $SIMHOME/src/SCALE-Sim/configs/google.cfg \
       --num-hmcs 81 \
       --num-vaults 16 \
@@ -59,3 +59,5 @@ do
       --prioritize-schedule \
       > $outdir/${nn}_mesh_overlap_2d_1_81_error.log 2>&1 &
 done
+
+wait

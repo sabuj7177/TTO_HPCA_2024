@@ -54,3 +54,5 @@ for i in ${!syntheticDataSize[@]}; do
       --prioritize-schedule \
       > $outdir/bw_${syntheticDataSize[$i]}_ring_81_error.log 2>&1 &
 done
+
+wait

@@ -47,6 +47,15 @@ The above command should show "source successfully" message.
 
 It binds booksim with python code. Now go back to the root folder.
 
+Run the following commands to update config files topology directory.
+
+`cd src`
+
+`python update_cfg_files.py`
+
+It will update the config file by appending the root directory of your system.
+You need to run this just once. After that you can reuse the updated config files for your experiment. Then go back to root folder.
+
 ### Reproduce the results of the paper
 
 We are providing all the simulation output files in **HPCA_2024_final** folder.
@@ -111,3 +120,34 @@ We use the following pattern for naming the output files.
 `{exp_type}_{model_name/data_size}_{allreduce_alg_type}_{total_nodes}_mesh.json`
 
 So, to test bw utilization of TTO with 512 MB data and 16 nodes, the output file name will be **bw_134217728_mesh_overlap_2d_1_16_mesh.json**
+
+Here is the number of experiments in each file.
+- bw/ring_bi_odd_bw.sh: 22
+- bw/tree_dtree_bw.sh: 44
+- bw/ring_uni_even_bw.sh: 22
+- bw/ring_uni_odd_bw.sh: 22
+- bw/mesh_overlap_2d_1_bw.sh: 44
+- bw/ring_bi_even_bw.sh: 22
+- bw/ring_2dn_bw.sh: 44
+- bw/multitree_bw.sh: 44
+- models/ring_uni_even_models.sh: 7
+- models/tree_dtree_models.sh: 14
+- models/ring_2dn_models.sh: 14
+- models/ring_bi_odd_models.sh: 7
+- models/mesh_overlap_2d_1_models.sh: 14
+- models/multitree_models.sh: 14
+- models/ring_uni_odd_models.sh: 7
+- models/ring_bi_even_models.sh: 7
+- overlap/comm_comp_overlap.sh: Around 1002
+- overlap/training_overlap.sh: 7
+- scalability/ring_bi_odd_scalability.sh: 7
+- scalability/ring_uni_odd_scalability.sh: 7
+- scalability/ring_bi_even_scalability.sh: 7
+- scalability/mesh_overlap_2d_1_scalability.sh: 14
+- scalability/multitree_scalability.sh: 14
+- scalability/ring_2dn_scalability.sh: 116
+- scalability/ring_uni_even_scalability.sh: 7
+- simba/simba_exp.sh: 84
+- simba/simba_train.sh: 14
+- chunk_sensitivity.sh: 11
+- link_utilization.sh: 5

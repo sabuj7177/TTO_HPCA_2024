@@ -184,3 +184,5 @@ do
         > $outdir/${nn}_ring_64_error.log 2>&1 &
   done
 done
+
+wait

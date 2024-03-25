@@ -1,6 +1,6 @@
 #!/bin/bash
 
-outdir=$SIMHOME/HPCA_2024/models/mesh_overlap_2d_1
+outdir=$SIMHOME/HPCA2024/models/mesh_overlap_2d_1
 
 mkdir -p $outdir
 mlperfdir=$SIMHOME/src/SCALE-Sim/topologies/mlperf

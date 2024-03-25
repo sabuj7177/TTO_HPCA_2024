@@ -298,3 +298,5 @@ do
       --prioritize-schedule \
       > $outdir/${nn}_ring_36_error_express_16.log 2>&1 &
 done
+
+wait

@@ -1,12 +1,16 @@
 #!/bin/python3.6
 import json
 import os
+import matplotlib
 
 import matplotlib.pyplot as plt
 from easypyplot import pdf
 
-plt.rcParams['font.family'] = ['serif']
+# plt.rcParams['font.family'] = ['serif']
 plt.rcParams['font.size'] = 20
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
+# matplotlib.rcParams['text.usetex'] = True
 
 def draw_graph(ax, schemes, names, folder_names, ldata, xlabels, total_nodes, folder_path, text_to_add):
     gbps = {}
@@ -31,6 +35,7 @@ def draw_graph(ax, schemes, names, folder_names, ldata, xlabels, total_nodes, fo
                             comm_cycles[name][data] = float(sim['results']['performance']['allreduce']['total'])
                     else:
                         comm_cycles[name][data] = 0
+                        print("File missing: " + str(filename))
 
     for s, name in enumerate(names):
         if name not in gbps.keys():
@@ -124,7 +129,7 @@ def main():
     labels.insert(5, lines_labels_2[0][1][4])
     figure.legend(lines, labels, loc='upper center', ncol=7, bbox_to_anchor=(0.5, 1.06))
     # figure.tight_layout()
-    figure.savefig('bandwidth.pdf', bbox_inches='tight')
+    figure.savefig('new/bandwidth.pdf', bbox_inches='tight')
 
 
     # plt.show()

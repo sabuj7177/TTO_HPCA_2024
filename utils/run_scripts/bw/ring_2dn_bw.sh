@@ -94,3 +94,5 @@ for i in ${!syntheticDataSize[@]}; do
       --radix 4 \
       > $outdir/bw_${syntheticDataSize[$i]}_ring2dn_81_error.log 2>&1 &
 done
+
+wait

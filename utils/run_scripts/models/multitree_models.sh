@@ -7,7 +7,7 @@ mlperfdir=$SIMHOME/src/SCALE-Sim/topologies/mlperf
 cnndir=$SIMHOME/src/SCALE-Sim/topologies/conv_nets
 
 for nnpath in $mlperfdir/AlphaGoZero $mlperfdir/FasterRCNN $mlperfdir/NCF_recommendation \
-  $mlperfdir/Resnet152 $mlperfdir/Transformer $mlperfdir/dlrm \
+  $mlperfdir/Resnet152 $mlperfdir/Transformer \
   $cnndir/alexnet $cnndir/Googlenet
 do
   nn=$(basename $nnpath)
@@ -36,7 +36,7 @@ do
       --load-tree \
       > $outdir/${nn}_multitree_64_error.log 2>&1 &
 
-      python $SIMHOME/src/simulate.py \
+  python $SIMHOME/src/simulate.py \
       --arch-config $SIMHOME/src/SCALE-Sim/configs/google.cfg \
       --num-hmcs 81 \
       --num-vaults 16 \
@@ -61,3 +61,5 @@ do
       --load-tree \
       > $outdir/${nn}_multitree_81_error.log 2>&1 &
 done
+
+wait

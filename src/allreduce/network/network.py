@@ -69,6 +69,9 @@ def construct_network(args):
         raise RuntimeError('Unknown network topology: ' + args.booksim_network)
 
     network.build_graph()
-    network.nodes = args.num_hmcs
+    if args.allreduce == 'dtree' and args.num_hmcs % 2 != 0:
+        network.nodes = args.num_hmcs - 1
+    else:
+        network.nodes = args.num_hmcs
 
     return network

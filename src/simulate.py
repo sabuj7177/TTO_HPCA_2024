@@ -209,7 +209,7 @@ def init():
             link_utilization_file = '{}/{}_{}_{}_{}_{}.pkl'.format(args.logdir, args.run_name, args.allreduce,
                                                                    args.num_hmcs,
                                                                    args.booksim_network, args.bandwidth)
-    else:
+    elif args.only_compute:
         if args.allreduce == 'mesh_fermat' or args.allreduce == 'mesh_overlap_2d_1':
             logfile = '{}/{}_{}_{}_{}_{}_{}.log'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
                                                         args.booksim_network, net_name, config_name)
@@ -222,6 +222,21 @@ def init():
                                                      args.booksim_network, args.bandwidth, net_name, config_name)
             jsonfile = '{}/{}_{}_{}_{}_{}_{}_{}.json'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
                                                        args.booksim_network, args.bandwidth, net_name, config_name)
+            link_utilization_file = '{}/{}_{}_{}_{}_{}.pkl'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
+                                                       args.booksim_network, args.bandwidth)
+    else:
+        if args.allreduce == 'mesh_fermat' or args.allreduce == 'mesh_overlap_2d_1':
+            logfile = '{}/{}_{}_{}_{}.log'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
+                                                        args.booksim_network)
+            jsonfile = '{}/{}_{}_{}_{}.json'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
+                                                          args.booksim_network)
+            link_utilization_file = '{}/{}_{}_{}_{}.pkl'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
+                                                    args.booksim_network)
+        else:
+            logfile = '{}/{}_{}_{}_{}_{}.log'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
+                                                     args.booksim_network, args.bandwidth)
+            jsonfile = '{}/{}_{}_{}_{}_{}.json'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
+                                                       args.booksim_network, args.bandwidth)
             link_utilization_file = '{}/{}_{}_{}_{}_{}.pkl'.format(args.logdir, args.run_name, args.allreduce, args.num_hmcs,
                                                        args.booksim_network, args.bandwidth)
 
@@ -311,6 +326,9 @@ def init():
     allreduce = construct_allreduce(args)
     allreduce.compute_schedule(args.kary, verbose=args.verbose)
     assert not (args.only_compute and args.only_allreduce)
+
+    if args.allreduce == 'dtree' and args.num_hmcs % 2 != 0:
+        args.num_hmcs = args.num_hmcs - 1
 
     if args.allreduce == 'mesh_fermat' or args.allreduce == 'mesh_overlap_2d_1':
         link_dict = {}

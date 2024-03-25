@@ -28,3 +28,5 @@ for i in ${!totalNodes[@]}; do
       --radix 4 \
       > $outdir/scalability_${totalNodes[$i]}_ring2dn_error.log 2>&1 &
 done
+
+wait

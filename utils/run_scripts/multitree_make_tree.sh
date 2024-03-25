@@ -31,3 +31,5 @@ for i in ${!clusterSize[@]}; do
       --prioritize-schedule \
       > $outdir/tree_${clusterSize[$i]}_multitree_mesh_error.log 2>&1 &
 done
+
+wait

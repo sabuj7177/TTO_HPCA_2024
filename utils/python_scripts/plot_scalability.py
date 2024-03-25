@@ -6,8 +6,10 @@ from matplotlib import pyplot as plt
 
 plt.rcParams["figure.figsize"] = [12.0, 5.0]
 plt.rcParams["figure.autolayout"] = True
-plt.rcParams['font.family'] = ['serif']
+# plt.rcParams['font.family'] = ['serif']
 plt.rcParams['font.size'] = 20
+plt.rcParams['pdf.fonttype'] = 42
+plt.rcParams['ps.fonttype'] = 42
 
 colors = ['#70ad47', '#ed7d31', '#0D1282', '#7A316F', '#31AA75', '#EC255A']
 makercolors = ['#e2f0d9', '#fbe5d6', '#F0DE36', '#7A316F', '#31AA75', '#EC255A']
@@ -37,6 +39,7 @@ def plot_it_2d(ax, nodes, names, schemes, folder_names, xlim, ylim, xlabel, ylab
                     cycles[s][n] = sim['results']['performance']['total']
             else:
                 cycles[s][n] = 0
+                print("File missing: " + str(filename))
 
         algorithmic_scalability[name] = [int(ele)/cycles[0][0] for ele in cycles[s]]
 

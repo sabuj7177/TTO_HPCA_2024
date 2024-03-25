@@ -31,3 +31,5 @@ for i in ${!totalNodes[@]}; do
       --load-tree \
       > $outdir/scalability_${totalNodes[$i]}_multitree_error.log 2>&1 &
 done
+
+wait

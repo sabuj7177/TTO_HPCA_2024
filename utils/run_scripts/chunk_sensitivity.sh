@@ -31,3 +31,5 @@ for i in ${!chunkSize[@]}; do
       --chunk-size ${chunkSize[$i]} \
       > $outdir/bw_33554432_${chunkSize[$i]}_mesh_overlap_2d_1_64_mesh_error.log 2>&1 &
 done
+
+wait

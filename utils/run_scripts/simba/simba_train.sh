@@ -60,3 +60,5 @@ do
     --prioritize-schedule \
     > $outdir/${nn}_mesh_overlap_2d_1_36_error_express_16.log 2>&1 &
 done
+
+wait

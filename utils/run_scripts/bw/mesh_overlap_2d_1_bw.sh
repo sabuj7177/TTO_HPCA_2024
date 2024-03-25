@@ -53,7 +53,7 @@ for i in ${!syntheticDataSize[@]}; do
       --prioritize-schedule \
       > $outdir/bw_${syntheticDataSize[$i]}_mesh_overlap_2d_1_25_mesh_error.log 2>&1 &
 
-      python $SIMHOME/src/simulate.py \
+  python $SIMHOME/src/simulate.py \
       --arch-config $SIMHOME/src/SCALE-Sim/configs/google.cfg \
       --num-hmcs 64 \
       --num-vaults 16 \
@@ -101,3 +101,5 @@ for i in ${!syntheticDataSize[@]}; do
       --prioritize-schedule \
       > $outdir/bw_${syntheticDataSize[$i]}_mesh_overlap_2d_1_81_mesh_error.log 2>&1 &
 done
+
+wait

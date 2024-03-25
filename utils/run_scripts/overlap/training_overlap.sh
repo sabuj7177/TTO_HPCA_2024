@@ -36,5 +36,6 @@ do
       --strict-schedule \
       --prioritize-schedule \
       > $outdir/${nn}_mesh_overlap_2d_1_64_error.log 2>&1 &
-
 done
+
+wait

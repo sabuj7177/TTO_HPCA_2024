@@ -141,3 +141,5 @@ for i in ${!syntheticDataSize[@]}; do
       --save-link-utilization \
       > $outdir/bw_${syntheticDataSize[$i]}_mesh_overlap_2d_1_81_mesh_error.log 2>&1 &
 done
+
+wait
