@@ -1,0 +1,1900 @@
+13 | node9 | Enqueuing packet 0 at time 13.
+13 | node9 | Enqueuing flit 0 (packet 0) at time 13.
+13 | node9 | Enqueuing flit 1 (packet 0) at time 13.
+13 | node9 | Enqueuing flit 2 (packet 0) at time 13.
+13 | node9 | Enqueuing flit 3 (packet 0) at time 13.
+13 | node9 | Enqueuing flit 4 (packet 0) at time 13.
+13 | traffic_manager | Finding output VC for flit 0:
+13 | traffic_manager |   Selected output VC 0.
+13 | node9 | Generating lookahead routing info for flit 0.
+13 | node9 | Injecting flit 0 into subnet 0 at time 13 with priority 0.
+14 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 0 with delay 1.
+14 | node9 | Injecting flit 1 into subnet 0 at time 14 with priority 0.
+14 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 0.
+15 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 1 with delay 1.
+15 | network_0/router_2 | Received flit 0 from channel at input 1.
+15 | node9 | Injecting flit 2 into subnet 0 at time 15 with priority 0.
+15 | network_0/router_2 | Adding flit 0 to VC 0 at input 1 (state: idle, empty).
+15 | network_0/router_2 | Using precomputed lookahead routing information for VC 0 at input 1 (front: 0).
+15 | network_0/router_2/buf_1/vc_0 | Changing state from idle to vc_alloc.
+15 | network_0/router_2 | Beginning VC allocation for VC 0 at input 1 (front: 0).
+15 | network_0/router_2 |   Requesting VC 0 at output 4 (in_pri: 0, out_pri: 0).
+15 | network_0/router_2/vc_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+15 | network_0/router_2/vc_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+15 | network_0/router_2 | Assigning VC 0 at output 4 to VC 0 at input 1.
+15 | network_0/router_2 | Completed VC allocation for VC 0 at input 1 (front: 0).
+15 | network_0/router_2 |   Acquiring assigned VC 0 at output 4.
+15 | network_0/router_2/buf_1/vc_0 | Changing state from vc_alloc to active.
+15 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 1.
+16 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 2 with delay 1.
+16 | network_0/router_2 | Received flit 1 from channel at input 1.
+16 | node5 | Enqueuing packet 1 at time 16.
+16 | node5 | Enqueuing flit 5 (packet 1) at time 16.
+16 | node5 | Enqueuing flit 6 (packet 1) at time 16.
+16 | node5 | Enqueuing flit 7 (packet 1) at time 16.
+16 | node5 | Enqueuing flit 8 (packet 1) at time 16.
+16 | node5 | Enqueuing flit 9 (packet 1) at time 16.
+16 | traffic_manager | Finding output VC for flit 5:
+16 | traffic_manager |   Selected output VC 0.
+16 | node5 | Generating lookahead routing info for flit 5.
+16 | node5 | Injecting flit 5 into subnet 0 at time 16 with priority 0.
+16 | traffic_manager | Selected output VC 0 is full for flit 3.
+16 | network_0/router_2 | Adding flit 1 to VC 0 at input 1 (state: active, front: 0).
+16 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 0).
+16 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+16 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+16 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+16 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+16 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 0).
+16 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+16 | network_0/router_2 | Updating lookahead routing information for flit 0.
+16 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 2.
+17 | network_0/network_0_fchan_ingress5 | Beginning channel traversal for flit 5 with delay 1.
+17 | network_0/router_2 | Received flit 2 from channel at input 1.
+17 | node5 | Injecting flit 6 into subnet 0 at time 17 with priority 0.
+17 | traffic_manager | Selected output VC 0 is full for flit 3.
+17 | network_0/router_2 | Adding flit 2 to VC 0 at input 1 (state: active, front: 1).
+17 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 1).
+17 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+17 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+17 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+17 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+17 | network_0/router_2 | Beginning crossbar traversal for flit 0 from input 1.0 to output 4.0.
+17 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 1).
+17 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+17 | network_0/router_2 | Completed crossbar traversal for flit 0 from input 1.0 to output 4.0.
+17 | network_0/router_2 | Buffering flit 0 at output 4.
+17 | network_0/network_0_fchan_ingress5 | Completed channel traversal for flit 5.
+17 | network_0/router_2 | Sending flit 0 to channel at output 4.
+18 | network_0/network_0_fchan_ingress5 | Beginning channel traversal for flit 6 with delay 1.
+18 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 0 with delay 1.
+18 | network_0/router_1 | Received flit 5 from channel at input 1.
+18 | node5 | Injecting flit 7 into subnet 0 at time 18 with priority 0.
+18 | node9 | Injecting flit 3 into subnet 0 at time 18 with priority 0.
+18 | network_0/router_1 | Adding flit 5 to VC 0 at input 1 (state: idle, empty).
+18 | network_0/router_1 | Using precomputed lookahead routing information for VC 0 at input 1 (front: 5).
+18 | network_0/router_1/buf_1/vc_0 | Changing state from idle to vc_alloc.
+18 | network_0/router_1 | Beginning VC allocation for VC 0 at input 1 (front: 5).
+18 | network_0/router_1 |   Requesting VC 0 at output 4 (in_pri: 0, out_pri: 0).
+18 | network_0/router_1/vc_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+18 | network_0/router_1/vc_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+18 | network_0/router_1 | Assigning VC 0 at output 4 to VC 0 at input 1.
+18 | network_0/router_1 | Completed VC allocation for VC 0 at input 1 (front: 5).
+18 | network_0/router_1 |   Acquiring assigned VC 0 at output 4.
+18 | network_0/router_1/buf_1/vc_0 | Changing state from vc_alloc to active.
+18 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 2).
+18 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+18 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+18 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+18 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+18 | network_0/router_2 | Beginning crossbar traversal for flit 1 from input 1.0 to output 4.0.
+18 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 2).
+18 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+18 | network_0/router_2 | Completed crossbar traversal for flit 1 from input 1.0 to output 4.0.
+18 | network_0/router_2 | Buffering flit 1 at output 4.
+18 | network_0/network_0_fchan_ingress5 | Completed channel traversal for flit 6.
+18 | network_0/network_0_fchan_8 | Completed channel traversal for flit 0.
+18 | network_0/router_2 | Sending flit 1 to channel at output 4.
+19 | network_0/network_0_fchan_ingress5 | Beginning channel traversal for flit 7 with delay 1.
+19 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 3 with delay 1.
+19 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 1 with delay 1.
+19 | network_0/router_0 | Received flit 0 from channel at input 6.
+19 | network_0/router_1 | Received flit 6 from channel at input 1.
+19 | traffic_manager | Selected output VC 0 is full for flit 8.
+19 | node9 | Injecting flit 4 into subnet 0 at time 19 with priority 0.
+19 | network_0/router_0 | Adding flit 0 to VC 0 at input 6 (state: idle, empty).
+19 | network_0/router_0 | Using precomputed lookahead routing information for VC 0 at input 6 (front: 0).
+19 | network_0/router_0/buf_6/vc_0 | Changing state from idle to vc_alloc.
+19 | network_0/router_0 | Beginning VC allocation for VC 0 at input 6 (front: 0).
+19 | network_0/router_0 |   Requesting VC 0 at output 4 (in_pri: 0, out_pri: 0).
+19 | network_0/router_0/vc_allocator | Input requests = [ 6 -> [ 4@0 ]  ], output requests = [ 4 -> [ 6@0 ]  ].
+19 | network_0/router_0/vc_allocator | Input grants = [ 6 -> 4  ], output grants = [ 4 -> 6  ].
+19 | network_0/router_0 | Assigning VC 0 at output 4 to VC 0 at input 6.
+19 | network_0/router_0 | Completed VC allocation for VC 0 at input 6 (front: 0).
+19 | network_0/router_0 |   Acquiring assigned VC 0 at output 4.
+19 | network_0/router_0/buf_6/vc_0 | Changing state from vc_alloc to active.
+19 | network_0/router_1 | Adding flit 6 to VC 0 at input 1 (state: active, front: 5).
+19 | network_0/router_1 | Beginning switch allocation for VC 0 at input 1 (front: 5).
+19 | network_0/router_1 |   Requesting output 4.0 (non-spec, pri: 0).
+19 | network_0/router_1/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+19 | network_0/router_1/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+19 | network_0/router_1 | Assigning output 4.0 to VC 0 at input 1.0.
+19 | network_0/router_1 | Completed switch allocation for VC 0 at input 1 (front: 5).
+19 | network_0/router_1 |   Scheduling switch connection from input 1.0 to output 4.0.
+19 | network_0/router_1 | Updating lookahead routing information for flit 5.
+19 | network_0/router_2 | Beginning crossbar traversal for flit 2 from input 1.0 to output 4.0.
+19 | network_0/router_2 | Completed crossbar traversal for flit 2 from input 1.0 to output 4.0.
+19 | network_0/router_2 | Buffering flit 2 at output 4.
+19 | network_0/network_0_fchan_ingress5 | Completed channel traversal for flit 7.
+19 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 3.
+19 | network_0/network_0_fchan_8 | Completed channel traversal for flit 1.
+19 | network_0/router_2 | Sending flit 2 to channel at output 4.
+20 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 4 with delay 1.
+20 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 2 with delay 1.
+20 | network_0/router_0 | Received flit 1 from channel at input 6.
+20 | network_0/router_1 | Received flit 7 from channel at input 1.
+20 | network_0/router_2 | Received flit 3 from channel at input 1.
+20 | node9 | Enqueuing packet 2 at time 19.
+20 | node9 | Enqueuing flit 10 (packet 2) at time 19.
+20 | node9 | Enqueuing flit 11 (packet 2) at time 19.
+20 | node9 | Enqueuing flit 12 (packet 2) at time 19.
+20 | node9 | Enqueuing flit 13 (packet 2) at time 19.
+20 | node9 | Enqueuing flit 14 (packet 2) at time 19.
+20 | traffic_manager | Selected output VC 0 is full for flit 8.
+20 | traffic_manager | Finding output VC for flit 10:
+20 | traffic_manager |   Output VC 0 is busy.
+20 | traffic_manager | No output VC found for flit 10.
+20 | network_0/router_0 | Adding flit 1 to VC 0 at input 6 (state: active, front: 0).
+20 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 0).
+20 | network_0/router_0 |   Requesting output 4.0 (non-spec, pri: 0).
+20 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 4@0 ]  ], output requests = [ 4 -> [ 6@0 ]  ].
+20 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 4  ], output grants = [ 4 -> 6  ].
+20 | network_0/router_0 | Assigning output 4.0 to VC 0 at input 6.0.
+20 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 0).
+20 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 4.0.
+20 | network_0/router_0 | Updating lookahead routing information for flit 0.
+20 | network_0/router_1 | Adding flit 7 to VC 0 at input 1 (state: active, front: 6).
+20 | network_0/router_1 | Beginning switch allocation for VC 0 at input 1 (front: 6).
+20 | network_0/router_1 |   Requesting output 4.0 (non-spec, pri: 0).
+20 | network_0/router_1/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+20 | network_0/router_1/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+20 | network_0/router_1 | Assigning output 4.0 to VC 0 at input 1.0.
+20 | network_0/router_1 | Beginning crossbar traversal for flit 5 from input 1.0 to output 4.0.
+20 | network_0/router_1 | Completed switch allocation for VC 0 at input 1 (front: 6).
+20 | network_0/router_1 |   Scheduling switch connection from input 1.0 to output 4.0.
+20 | network_0/router_1 | Completed crossbar traversal for flit 5 from input 1.0 to output 4.0.
+20 | network_0/router_1 | Buffering flit 5 at output 4.
+20 | network_0/router_2 | Adding flit 3 to VC 0 at input 1 (state: active, empty).
+20 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 3).
+20 | network_0/router_2 |   VC 0 at output 4 is full.
+20 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 3).
+20 | network_0/router_2 |   No output port allocated.
+20 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 4.
+20 | network_0/network_0_fchan_8 | Completed channel traversal for flit 2.
+20 | network_0/router_1 | Sending flit 5 to channel at output 4.
+21 | network_0/network_0_fchan_4 | Beginning channel traversal for flit 5 with delay 1.
+21 | network_0/router_0 | Received flit 2 from channel at input 6.
+21 | network_0/router_2 | Received flit 4 from channel at input 1.
+21 | node5 | Injecting flit 8 into subnet 0 at time 21 with priority 0.
+21 | traffic_manager | Finding output VC for flit 10:
+21 | traffic_manager |   Output VC 0 is busy.
+21 | traffic_manager | No output VC found for flit 10.
+21 | network_0/router_0 | Adding flit 2 to VC 0 at input 6 (state: active, front: 1).
+21 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 1).
+21 | network_0/router_0 |   Requesting output 4.0 (non-spec, pri: 0).
+21 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 4@0 ]  ], output requests = [ 4 -> [ 6@0 ]  ].
+21 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 4  ], output grants = [ 4 -> 6  ].
+21 | network_0/router_0 | Assigning output 4.0 to VC 0 at input 6.0.
+21 | network_0/router_0 | Beginning crossbar traversal for flit 0 from input 6.0 to output 4.0.
+21 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 1).
+21 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 4.0.
+21 | network_0/router_0 | Completed crossbar traversal for flit 0 from input 6.0 to output 4.0.
+21 | network_0/router_0 | Buffering flit 0 at output 4.
+21 | network_0/router_1 | Beginning switch allocation for VC 0 at input 1 (front: 7).
+21 | network_0/router_1 |   Requesting output 4.0 (non-spec, pri: 0).
+21 | network_0/router_1/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+21 | network_0/router_1/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+21 | network_0/router_1 | Assigning output 4.0 to VC 0 at input 1.0.
+21 | network_0/router_1 | Beginning crossbar traversal for flit 6 from input 1.0 to output 4.0.
+21 | network_0/router_1 | Completed switch allocation for VC 0 at input 1 (front: 7).
+21 | network_0/router_1 |   Scheduling switch connection from input 1.0 to output 4.0.
+21 | network_0/router_1 | Completed crossbar traversal for flit 6 from input 1.0 to output 4.0.
+21 | network_0/router_1 | Buffering flit 6 at output 4.
+21 | network_0/router_2 | Adding flit 4 to VC 0 at input 1 (state: active, front: 3).
+21 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 3).
+21 | network_0/router_2 |   VC 0 at output 4 is full.
+21 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 3).
+21 | network_0/router_2 |   No output port allocated.
+21 | network_0/network_0_fchan_4 | Completed channel traversal for flit 5.
+21 | network_0/router_0 | Sending flit 0 to channel at output 4.
+21 | network_0/router_1 | Sending flit 6 to channel at output 4.
+22 | network_0/network_0_fchan_ingress5 | Beginning channel traversal for flit 8 with delay 1.
+22 | network_0/network_0_fchan_0 | Beginning channel traversal for flit 0 with delay 1.
+22 | network_0/network_0_fchan_4 | Beginning channel traversal for flit 6 with delay 1.
+22 | network_0/router_0 | Received flit 5 from channel at input 4.
+22 | node5 | Injecting flit 9 into subnet 0 at time 22 with priority 0.
+22 | traffic_manager | Finding output VC for flit 10:
+22 | traffic_manager |   Output VC 0 is busy.
+22 | traffic_manager | No output VC found for flit 10.
+22 | network_0/router_0 | Adding flit 5 to VC 0 at input 4 (state: idle, empty).
+22 | network_0/router_0 | Using precomputed lookahead routing information for VC 0 at input 4 (front: 5).
+22 | network_0/router_0/buf_4/vc_0 | Changing state from idle to vc_alloc.
+22 | network_0/router_0 | Beginning VC allocation for VC 0 at input 4 (front: 5).
+22 | network_0/router_0 |   Requesting VC 0 at output 6 (in_pri: 0, out_pri: 0).
+22 | network_0/router_0/vc_allocator | Input requests = [ 4 -> [ 6@0 ]  ], output requests = [ 6 -> [ 4@0 ]  ].
+22 | network_0/router_0/vc_allocator | Input grants = [ 4 -> 6  ], output grants = [ 6 -> 4  ].
+22 | network_0/router_0 | Assigning VC 0 at output 6 to VC 0 at input 4.
+22 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 2).
+22 | network_0/router_0 |   Requesting output 4.0 (non-spec, pri: 0).
+22 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 4@0 ]  ], output requests = [ 4 -> [ 6@0 ]  ].
+22 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 4  ], output grants = [ 4 -> 6  ].
+22 | network_0/router_0 | Assigning output 4.0 to VC 0 at input 6.0.
+22 | network_0/router_0 | Beginning crossbar traversal for flit 1 from input 6.0 to output 4.0.
+22 | network_0/router_0 | Completed VC allocation for VC 0 at input 4 (front: 5).
+22 | network_0/router_0 |   Acquiring assigned VC 0 at output 6.
+22 | network_0/router_0/buf_4/vc_0 | Changing state from vc_alloc to active.
+22 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 2).
+22 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 4.0.
+22 | network_0/router_0 | Completed crossbar traversal for flit 1 from input 6.0 to output 4.0.
+22 | network_0/router_0 | Buffering flit 1 at output 4.
+22 | network_0/router_1 | Beginning crossbar traversal for flit 7 from input 1.0 to output 4.0.
+22 | network_0/router_1 | Completed crossbar traversal for flit 7 from input 1.0 to output 4.0.
+22 | network_0/router_1 | Buffering flit 7 at output 4.
+22 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 3).
+22 | network_0/router_2 |   VC 0 at output 4 is full.
+22 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 3).
+22 | network_0/router_2 |   No output port allocated.
+22 | network_0/network_0_fchan_ingress5 | Completed channel traversal for flit 8.
+22 | network_0/network_0_fchan_0 | Completed channel traversal for flit 0.
+22 | network_0/network_0_fchan_4 | Completed channel traversal for flit 6.
+22 | network_0/router_0 | Sending flit 1 to channel at output 4.
+22 | network_0/router_1 | Sending flit 7 to channel at output 4.
+23 | network_0/network_0_fchan_ingress5 | Beginning channel traversal for flit 9 with delay 1.
+23 | network_0/network_0_fchan_0 | Beginning channel traversal for flit 1 with delay 1.
+23 | network_0/network_0_fchan_4 | Beginning channel traversal for flit 7 with delay 1.
+23 | network_0/router_0 | Received flit 6 from channel at input 4.
+23 | network_0/router_1 | Received flit 8 from channel at input 1.
+23 | network_0/router_1 | Received flit 0 from channel at input 4.
+23 | traffic_manager | Finding output VC for flit 10:
+23 | traffic_manager |   Output VC 0 is busy.
+23 | traffic_manager | No output VC found for flit 10.
+23 | network_0/router_0 | Adding flit 6 to VC 0 at input 4 (state: active, front: 5).
+23 | network_0/router_0 | Beginning switch allocation for VC 0 at input 4 (front: 5).
+23 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+23 | network_0/router_0/sw_allocator | Input requests = [ 4 -> [ 6@0 ]  ], output requests = [ 6 -> [ 4@0 ]  ].
+23 | network_0/router_0/sw_allocator | Input grants = [ 4 -> 6  ], output grants = [ 6 -> 4  ].
+23 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 4.0.
+23 | network_0/router_0 | Beginning crossbar traversal for flit 2 from input 6.0 to output 4.0.
+23 | network_0/router_0 | Completed switch allocation for VC 0 at input 4 (front: 5).
+23 | network_0/router_0 |   Scheduling switch connection from input 4.0 to output 6.0.
+23 | network_0/router_0 | Updating lookahead routing information for flit 5.
+23 | network_0/router_0 | Completed crossbar traversal for flit 2 from input 6.0 to output 4.0.
+23 | network_0/router_0 | Buffering flit 2 at output 4.
+23 | network_0/router_1 | Adding flit 8 to VC 0 at input 1 (state: active, empty).
+23 | network_0/router_1 | Adding flit 0 to VC 0 at input 4 (state: idle, empty).
+23 | network_0/router_1 | Using precomputed lookahead routing information for VC 0 at input 4 (front: 0).
+23 | network_0/router_1/buf_4/vc_0 | Changing state from idle to vc_alloc.
+23 | network_0/router_1 | Beginning VC allocation for VC 0 at input 4 (front: 0).
+23 | network_0/router_1 |   Requesting VC 0 at output 0 (in_pri: 0, out_pri: 0).
+23 | network_0/router_1/vc_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+23 | network_0/router_1/vc_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+23 | network_0/router_1 | Assigning VC 0 at output 0 to VC 0 at input 4.
+23 | network_0/router_1 | Beginning switch allocation for VC 0 at input 1 (front: 8).
+23 | network_0/router_1 |   VC 0 at output 4 is full.
+23 | network_0/router_1 | Completed VC allocation for VC 0 at input 4 (front: 0).
+23 | network_0/router_1 |   Acquiring assigned VC 0 at output 0.
+23 | network_0/router_1/buf_4/vc_0 | Changing state from vc_alloc to active.
+23 | network_0/router_1 | Completed switch allocation for VC 0 at input 1 (front: 8).
+23 | network_0/router_1 |   No output port allocated.
+23 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 3).
+23 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+23 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+23 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+23 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+23 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 3).
+23 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+23 | network_0/network_0_fchan_ingress5 | Completed channel traversal for flit 9.
+23 | network_0/network_0_fchan_0 | Completed channel traversal for flit 1.
+23 | network_0/network_0_fchan_4 | Completed channel traversal for flit 7.
+23 | network_0/router_0 | Sending flit 2 to channel at output 4.
+24 | network_0/network_0_fchan_0 | Beginning channel traversal for flit 2 with delay 1.
+24 | network_0/router_0 | Received flit 7 from channel at input 4.
+24 | network_0/router_1 | Received flit 9 from channel at input 1.
+24 | network_0/router_1 | Received flit 1 from channel at input 4.
+24 | traffic_manager | Finding output VC for flit 10:
+24 | traffic_manager |   Output VC 0 is busy.
+24 | traffic_manager | No output VC found for flit 10.
+24 | network_0/router_0 | Adding flit 7 to VC 0 at input 4 (state: active, front: 6).
+24 | network_0/router_0 | Beginning switch allocation for VC 0 at input 4 (front: 6).
+24 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+24 | network_0/router_0/sw_allocator | Input requests = [ 4 -> [ 6@0 ]  ], output requests = [ 6 -> [ 4@0 ]  ].
+24 | network_0/router_0/sw_allocator | Input grants = [ 4 -> 6  ], output grants = [ 6 -> 4  ].
+24 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 4.0.
+24 | network_0/router_0 | Beginning crossbar traversal for flit 5 from input 4.0 to output 6.0.
+24 | network_0/router_0 | Completed switch allocation for VC 0 at input 4 (front: 6).
+24 | network_0/router_0 |   Scheduling switch connection from input 4.0 to output 6.0.
+24 | network_0/router_0 | Completed crossbar traversal for flit 5 from input 4.0 to output 6.0.
+24 | network_0/router_0 | Buffering flit 5 at output 6.
+24 | network_0/router_1 | Adding flit 9 to VC 0 at input 1 (state: active, front: 8).
+24 | network_0/router_1 | Adding flit 1 to VC 0 at input 4 (state: active, front: 0).
+24 | network_0/router_1 | Beginning switch allocation for VC 0 at input 4 (front: 0).
+24 | network_0/router_1 |   Requesting output 0.0 (non-spec, pri: 0).
+24 | network_0/router_1 | Beginning switch allocation for VC 0 at input 1 (front: 8).
+24 | network_0/router_1 |   VC 0 at output 4 is full.
+24 | network_0/router_1/sw_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+24 | network_0/router_1/sw_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+24 | network_0/router_1 | Assigning output 0.0 to VC 0 at input 4.0.
+24 | network_0/router_1 | Completed switch allocation for VC 0 at input 4 (front: 0).
+24 | network_0/router_1 |   Scheduling switch connection from input 4.0 to output 0.0.
+24 | network_0/router_1 | Completed switch allocation for VC 0 at input 1 (front: 8).
+24 | network_0/router_1 |   No output port allocated.
+24 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 4).
+24 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+24 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+24 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+24 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+24 | network_0/router_2 | Beginning crossbar traversal for flit 3 from input 1.0 to output 4.0.
+24 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 4).
+24 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+24 | network_0/router_2 | Completed crossbar traversal for flit 3 from input 1.0 to output 4.0.
+24 | network_0/router_2 | Buffering flit 3 at output 4.
+24 | network_0/network_0_fchan_0 | Completed channel traversal for flit 2.
+24 | network_0/router_0 | Sending flit 5 to channel at output 6.
+24 | network_0/router_2 | Sending flit 3 to channel at output 4.
+25 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 5 with delay 1.
+25 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 3 with delay 1.
+25 | network_0/router_1 | Received flit 2 from channel at input 4.
+25 | traffic_manager | Finding output VC for flit 10:
+25 | traffic_manager |   Output VC 0 is busy.
+25 | traffic_manager | No output VC found for flit 10.
+25 | network_0/router_0 | Beginning switch allocation for VC 0 at input 4 (front: 7).
+25 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+25 | network_0/router_0/sw_allocator | Input requests = [ 4 -> [ 6@0 ]  ], output requests = [ 6 -> [ 4@0 ]  ].
+25 | network_0/router_0/sw_allocator | Input grants = [ 4 -> 6  ], output grants = [ 6 -> 4  ].
+25 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 4.0.
+25 | network_0/router_0 | Beginning crossbar traversal for flit 6 from input 4.0 to output 6.0.
+25 | network_0/router_0 | Completed switch allocation for VC 0 at input 4 (front: 7).
+25 | network_0/router_0 |   Scheduling switch connection from input 4.0 to output 6.0.
+25 | network_0/router_0 | Completed crossbar traversal for flit 6 from input 4.0 to output 6.0.
+25 | network_0/router_0 | Buffering flit 6 at output 6.
+25 | network_0/router_1 | Adding flit 2 to VC 0 at input 4 (state: active, front: 1).
+25 | network_0/router_1 | Beginning switch allocation for VC 0 at input 4 (front: 1).
+25 | network_0/router_1 |   Requesting output 0.0 (non-spec, pri: 0).
+25 | network_0/router_1 | Beginning switch allocation for VC 0 at input 1 (front: 8).
+25 | network_0/router_1 |   VC 0 at output 4 is full.
+25 | network_0/router_1/sw_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+25 | network_0/router_1/sw_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+25 | network_0/router_1 | Assigning output 0.0 to VC 0 at input 4.0.
+25 | network_0/router_1 | Beginning crossbar traversal for flit 0 from input 4.0 to output 0.0.
+25 | network_0/router_1 | Completed switch allocation for VC 0 at input 4 (front: 1).
+25 | network_0/router_1 |   Scheduling switch connection from input 4.0 to output 0.0.
+25 | network_0/router_1 | Completed switch allocation for VC 0 at input 1 (front: 8).
+25 | network_0/router_1 |   No output port allocated.
+25 | network_0/router_1 | Completed crossbar traversal for flit 0 from input 4.0 to output 0.0.
+25 | network_0/router_1 | Buffering flit 0 at output 0.
+25 | network_0/router_2 | Beginning crossbar traversal for flit 4 from input 1.0 to output 4.0.
+25 | network_0/router_2 | Completed crossbar traversal for flit 4 from input 1.0 to output 4.0.
+25 | network_0/router_2 | Buffering flit 4 at output 4.
+25 | network_0/network_0_fchan_2 | Completed channel traversal for flit 5.
+25 | network_0/network_0_fchan_8 | Completed channel traversal for flit 3.
+25 | network_0/router_0 | Sending flit 6 to channel at output 6.
+25 | network_0/router_1 | Sending flit 0 to channel at output 0.
+25 | network_0/router_2 | Sending flit 4 to channel at output 4.
+26 | network_0/network_0_fchan_egress4 | Beginning channel traversal for flit 0 with delay 1.
+26 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 6 with delay 1.
+26 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 4 with delay 1.
+26 | network_0/router_0 | Received flit 3 from channel at input 6.
+26 | network_0/router_2 | Received flit 5 from channel at input 4.
+26 | node0 | Enqueuing packet 3 at time 26.
+26 | node0 | Enqueuing flit 15 (packet 3) at time 26.
+26 | node0 | Enqueuing flit 16 (packet 3) at time 26.
+26 | node0 | Enqueuing flit 17 (packet 3) at time 26.
+26 | node0 | Enqueuing flit 18 (packet 3) at time 26.
+26 | node0 | Enqueuing flit 19 (packet 3) at time 26.
+26 | traffic_manager | Finding output VC for flit 15:
+26 | traffic_manager |   Selected output VC 0.
+26 | node0 | Generating lookahead routing info for flit 15.
+26 | node0 | Injecting flit 15 into subnet 0 at time 26 with priority 0.
+26 | traffic_manager | Finding output VC for flit 10:
+26 | traffic_manager |   Selected output VC 0.
+26 | node9 | Generating lookahead routing info for flit 10.
+26 | node9 | Injecting flit 10 into subnet 0 at time 26 with priority 0.
+26 | network_0/router_0 | Adding flit 3 to VC 0 at input 6 (state: active, empty).
+26 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 3).
+26 | network_0/router_0 |   VC 0 at output 4 is full.
+26 | network_0/router_0 | Beginning crossbar traversal for flit 7 from input 4.0 to output 6.0.
+26 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 3).
+26 | network_0/router_0 |   No output port allocated.
+26 | network_0/router_0 | Completed crossbar traversal for flit 7 from input 4.0 to output 6.0.
+26 | network_0/router_0 | Buffering flit 7 at output 6.
+26 | network_0/router_1 | Beginning switch allocation for VC 0 at input 4 (front: 2).
+26 | network_0/router_1 |   Requesting output 0.0 (non-spec, pri: 0).
+26 | network_0/router_1 | Beginning switch allocation for VC 0 at input 1 (front: 8).
+26 | network_0/router_1 |   Requesting output 4.0 (non-spec, pri: 0).
+26 | network_0/router_1/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  4 -> [ 1@0 ]  ].
+26 | network_0/router_1/sw_allocator | Input grants = [ 1 -> 4  4 -> 0  ], output grants = [ 0 -> 4  4 -> 1  ].
+26 | network_0/router_1 | Assigning output 0.0 to VC 0 at input 4.0.
+26 | network_0/router_1 | Assigning output 4.0 to VC 0 at input 1.0.
+26 | network_0/router_1 | Beginning crossbar traversal for flit 1 from input 4.0 to output 0.0.
+26 | network_0/router_1 | Completed switch allocation for VC 0 at input 4 (front: 2).
+26 | network_0/router_1 |   Scheduling switch connection from input 4.0 to output 0.0.
+26 | network_0/router_1 | Completed switch allocation for VC 0 at input 1 (front: 8).
+26 | network_0/router_1 |   Scheduling switch connection from input 1.0 to output 4.0.
+26 | network_0/router_1 | Completed crossbar traversal for flit 1 from input 4.0 to output 0.0.
+26 | network_0/router_1 | Buffering flit 1 at output 0.
+26 | network_0/router_2 | Adding flit 5 to VC 0 at input 4 (state: idle, empty).
+26 | network_0/router_2 | Using precomputed lookahead routing information for VC 0 at input 4 (front: 5).
+26 | network_0/router_2/buf_4/vc_0 | Changing state from idle to vc_alloc.
+26 | network_0/router_2 | Beginning VC allocation for VC 0 at input 4 (front: 5).
+26 | network_0/router_2 |   Requesting VC 0 at output 2 (in_pri: 0, out_pri: 0).
+26 | network_0/router_2/vc_allocator | Input requests = [ 4 -> [ 2@0 ]  ], output requests = [ 2 -> [ 4@0 ]  ].
+26 | network_0/router_2/vc_allocator | Input grants = [ 4 -> 2  ], output grants = [ 2 -> 4  ].
+26 | network_0/router_2 | Assigning VC 0 at output 2 to VC 0 at input 4.
+26 | network_0/router_2 | Completed VC allocation for VC 0 at input 4 (front: 5).
+26 | network_0/router_2 |   Acquiring assigned VC 0 at output 2.
+26 | network_0/router_2/buf_4/vc_0 | Changing state from vc_alloc to active.
+26 | network_0/network_0_fchan_egress4 | Completed channel traversal for flit 0.
+26 | network_0/network_0_fchan_2 | Completed channel traversal for flit 6.
+26 | network_0/network_0_fchan_8 | Completed channel traversal for flit 4.
+26 | network_0/router_0 | Sending flit 7 to channel at output 6.
+26 | network_0/router_1 | Sending flit 1 to channel at output 0.
+27 | node4 | Ejecting flit 0 (packet 0) from VC 0.
+27 | network_0/network_0_fchan_ingress0 | Beginning channel traversal for flit 15 with delay 1.
+27 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 10 with delay 1.
+27 | network_0/network_0_fchan_egress4 | Beginning channel traversal for flit 1 with delay 1.
+27 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 7 with delay 1.
+27 | network_0/router_0 | Received flit 4 from channel at input 6.
+27 | network_0/router_2 | Received flit 6 from channel at input 4.
+27 | node0 | Injecting flit 16 into subnet 0 at time 27 with priority 0.
+27 | node9 | Injecting flit 11 into subnet 0 at time 27 with priority 0.
+27 | node4 | Injecting credit for VC 0 into subnet 0.
+27 | node4 | Retiring flit 0 (packet 0, src = 9, dest = 4, hops = 3, flat = 14).
+27 | network_0/router_0 | Adding flit 4 to VC 0 at input 6 (state: active, front: 3).
+27 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 3).
+27 | network_0/router_0 |   Requesting output 4.0 (non-spec, pri: 0).
+27 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 4@0 ]  ], output requests = [ 4 -> [ 6@0 ]  ].
+27 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 4  ], output grants = [ 4 -> 6  ].
+27 | network_0/router_0 | Assigning output 4.0 to VC 0 at input 6.0.
+27 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 3).
+27 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 4.0.
+27 | network_0/router_1 | Beginning switch allocation for VC 0 at input 1 (front: 9).
+27 | network_0/router_1 |   Requesting output 4.0 (non-spec, pri: 0).
+27 | network_0/router_1/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+27 | network_0/router_1/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+27 | network_0/router_1 | Assigning output 4.0 to VC 0 at input 1.0.
+27 | network_0/router_1 | Beginning crossbar traversal for flit 2 from input 4.0 to output 0.0.
+27 | network_0/router_1 | Beginning crossbar traversal for flit 8 from input 1.0 to output 4.0.
+27 | network_0/router_1 | Completed switch allocation for VC 0 at input 1 (front: 9).
+27 | network_0/router_1 |   Scheduling switch connection from input 1.0 to output 4.0.
+27 | network_0/router_1 | Completed crossbar traversal for flit 2 from input 4.0 to output 0.0.
+27 | network_0/router_1 | Buffering flit 2 at output 0.
+27 | network_0/router_1 | Completed crossbar traversal for flit 8 from input 1.0 to output 4.0.
+27 | network_0/router_1 | Buffering flit 8 at output 4.
+27 | network_0/router_2 | Adding flit 6 to VC 0 at input 4 (state: active, front: 5).
+27 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 5).
+27 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+27 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 2@0 ]  ], output requests = [ 2 -> [ 4@0 ]  ].
+27 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 2  ], output grants = [ 2 -> 4  ].
+27 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 4.0.
+27 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 5).
+27 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 2.0.
+27 | network_0/network_0_fchan_ingress0 | Completed channel traversal for flit 15.
+27 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 10.
+27 | network_0/network_0_fchan_egress4 | Completed channel traversal for flit 1.
+27 | network_0/network_0_fchan_2 | Completed channel traversal for flit 7.
+27 | network_0/router_1 | Sending flit 2 to channel at output 0.
+27 | network_0/router_1 | Sending flit 8 to channel at output 4.
+28 | node4 | Ejecting flit 1 (packet 0) from VC 0.
+28 | network_0/network_0_fchan_ingress0 | Beginning channel traversal for flit 16 with delay 1.
+28 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 11 with delay 1.
+28 | network_0/network_0_fchan_egress4 | Beginning channel traversal for flit 2 with delay 1.
+28 | network_0/network_0_fchan_4 | Beginning channel traversal for flit 8 with delay 1.
+28 | network_0/router_0 | Received flit 15 from channel at input 0.
+28 | network_0/router_2 | Received flit 10 from channel at input 1.
+28 | network_0/router_2 | Received flit 7 from channel at input 4.
+28 | node0 | Injecting flit 17 into subnet 0 at time 28 with priority 0.
+28 | node9 | Injecting flit 12 into subnet 0 at time 28 with priority 0.
+28 | node4 | Injecting credit for VC 0 into subnet 0.
+28 | node4 | Retiring flit 1 (packet 0, src = 9, dest = -1, hops = 3, flat = 14).
+28 | network_0/router_0 | Adding flit 15 to VC 0 at input 0 (state: idle, empty).
+28 | network_0/router_0 | Using precomputed lookahead routing information for VC 0 at input 0 (front: 15).
+28 | network_0/router_0/buf_0/vc_0 | Changing state from idle to vc_alloc.
+28 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+28 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+28 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 4).
+28 | network_0/router_0 |   Requesting output 4.0 (non-spec, pri: 0).
+28 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 4@0 ]  ], output requests = [ 4 -> [ 6@0 ]  ].
+28 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 4  ], output grants = [ 4 -> 6  ].
+28 | network_0/router_0 | Assigning output 4.0 to VC 0 at input 6.0.
+28 | network_0/router_0 | Beginning crossbar traversal for flit 3 from input 6.0 to output 4.0.
+28 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+28 | network_0/router_0 |   No output VC allocated.
+28 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 4).
+28 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 4.0.
+28 | network_0/router_0 | Completed crossbar traversal for flit 3 from input 6.0 to output 4.0.
+28 | network_0/router_0 | Buffering flit 3 at output 4.
+28 | network_0/router_1 | Beginning crossbar traversal for flit 9 from input 1.0 to output 4.0.
+28 | network_0/router_1 | Completed crossbar traversal for flit 9 from input 1.0 to output 4.0.
+28 | network_0/router_1 | Buffering flit 9 at output 4.
+28 | network_0/router_2 | Adding flit 10 to VC 0 at input 1 (state: idle, empty).
+28 | network_0/router_2 | Using precomputed lookahead routing information for VC 0 at input 1 (front: 10).
+28 | network_0/router_2/buf_1/vc_0 | Changing state from idle to vc_alloc.
+28 | network_0/router_2 | Adding flit 7 to VC 0 at input 4 (state: active, front: 6).
+28 | network_0/router_2 | Beginning VC allocation for VC 0 at input 1 (front: 10).
+28 | network_0/router_2 |   VC 0 at output 4 is in use by VC 0 at input 1 (front flit: 10).
+28 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 6).
+28 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+28 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 2@0 ]  ], output requests = [ 2 -> [ 4@0 ]  ].
+28 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 2  ], output grants = [ 2 -> 4  ].
+28 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 4.0.
+28 | network_0/router_2 | Beginning crossbar traversal for flit 5 from input 4.0 to output 2.0.
+28 | network_0/router_2 | Completed VC allocation for VC 0 at input 1 (front: 10).
+28 | network_0/router_2 |   No output VC allocated.
+28 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 6).
+28 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 2.0.
+28 | network_0/router_2 | Completed crossbar traversal for flit 5 from input 4.0 to output 2.0.
+28 | network_0/router_2 | Buffering flit 5 at output 2.
+28 | network_0/network_0_fchan_ingress0 | Completed channel traversal for flit 16.
+28 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 11.
+28 | network_0/network_0_fchan_egress4 | Completed channel traversal for flit 2.
+28 | network_0/network_0_fchan_4 | Completed channel traversal for flit 8.
+28 | network_0/router_0 | Sending flit 3 to channel at output 4.
+28 | network_0/router_1 | Sending flit 9 to channel at output 4.
+28 | network_0/router_2 | Sending flit 5 to channel at output 2.
+29 | node4 | Ejecting flit 2 (packet 0) from VC 0.
+29 | network_0/network_0_fchan_ingress0 | Beginning channel traversal for flit 17 with delay 1.
+29 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 12 with delay 1.
+29 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 5 with delay 1.
+29 | network_0/network_0_fchan_0 | Beginning channel traversal for flit 3 with delay 1.
+29 | network_0/network_0_fchan_4 | Beginning channel traversal for flit 9 with delay 1.
+29 | network_0/router_0 | Received flit 16 from channel at input 0.
+29 | network_0/router_0 | Received flit 8 from channel at input 4.
+29 | network_0/router_2 | Received flit 11 from channel at input 1.
+29 | traffic_manager | Selected output VC 0 is full for flit 18.
+29 | traffic_manager | Selected output VC 0 is full for flit 13.
+29 | node4 | Injecting credit for VC 0 into subnet 0.
+29 | node4 | Retiring flit 2 (packet 0, src = 9, dest = -1, hops = 3, flat = 14).
+29 | network_0/router_0 | Adding flit 16 to VC 0 at input 0 (state: vc_alloc, front: 15).
+29 | network_0/router_0 | Adding flit 8 to VC 0 at input 4 (state: active, empty).
+29 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+29 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (front flit: 8).
+29 | network_0/router_0 | Beginning switch allocation for VC 0 at input 4 (front: 8).
+29 | network_0/router_0 |   VC 0 at output 6 is full.
+29 | network_0/router_0 | Beginning crossbar traversal for flit 4 from input 6.0 to output 4.0.
+29 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+29 | network_0/router_0 |   No output VC allocated.
+29 | network_0/router_0 | Completed switch allocation for VC 0 at input 4 (front: 8).
+29 | network_0/router_0 |   No output port allocated.
+29 | network_0/router_0 | Completed crossbar traversal for flit 4 from input 6.0 to output 4.0.
+29 | network_0/router_0 | Buffering flit 4 at output 4.
+29 | network_0/router_2 | Adding flit 11 to VC 0 at input 1 (state: vc_alloc, front: 10).
+29 | network_0/router_2 | Beginning VC allocation for VC 0 at input 1 (front: 10).
+29 | network_0/router_2 |   VC 0 at output 4 is in use by VC 0 at input 1 (front flit: 10).
+29 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 7).
+29 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+29 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 2@0 ]  ], output requests = [ 2 -> [ 4@0 ]  ].
+29 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 2  ], output grants = [ 2 -> 4  ].
+29 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 4.0.
+29 | network_0/router_2 | Beginning crossbar traversal for flit 6 from input 4.0 to output 2.0.
+29 | network_0/router_2 | Completed VC allocation for VC 0 at input 1 (front: 10).
+29 | network_0/router_2 |   No output VC allocated.
+29 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 7).
+29 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 2.0.
+29 | network_0/router_2 | Completed crossbar traversal for flit 6 from input 4.0 to output 2.0.
+29 | network_0/router_2 | Buffering flit 6 at output 2.
+29 | network_0/network_0_fchan_ingress0 | Completed channel traversal for flit 17.
+29 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 12.
+29 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 5.
+29 | network_0/network_0_fchan_0 | Completed channel traversal for flit 3.
+29 | network_0/network_0_fchan_4 | Completed channel traversal for flit 9.
+29 | network_0/router_0 | Sending flit 4 to channel at output 4.
+29 | network_0/router_2 | Sending flit 6 to channel at output 2.
+30 | node10 | Ejecting flit 5 (packet 1) from VC 0.
+30 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 6 with delay 1.
+30 | network_0/network_0_fchan_0 | Beginning channel traversal for flit 4 with delay 1.
+30 | network_0/router_0 | Received flit 17 from channel at input 0.
+30 | network_0/router_0 | Received flit 9 from channel at input 4.
+30 | network_0/router_1 | Received flit 3 from channel at input 4.
+30 | network_0/router_2 | Received flit 12 from channel at input 1.
+30 | traffic_manager | Selected output VC 0 is full for flit 18.
+30 | traffic_manager | Selected output VC 0 is full for flit 13.
+30 | node10 | Injecting credit for VC 0 into subnet 0.
+30 | node10 | Retiring flit 5 (packet 1, src = 5, dest = 10, hops = 3, flat = 14).
+30 | network_0/router_0 | Adding flit 17 to VC 0 at input 0 (state: vc_alloc, front: 15).
+30 | network_0/router_0 | Adding flit 9 to VC 0 at input 4 (state: active, front: 8).
+30 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+30 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (front flit: 8).
+30 | network_0/router_0 | Beginning switch allocation for VC 0 at input 4 (front: 8).
+30 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+30 | network_0/router_0/sw_allocator | Input requests = [ 4 -> [ 6@0 ]  ], output requests = [ 6 -> [ 4@0 ]  ].
+30 | network_0/router_0/sw_allocator | Input grants = [ 4 -> 6  ], output grants = [ 6 -> 4  ].
+30 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 4.0.
+30 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+30 | network_0/router_0 |   No output VC allocated.
+30 | network_0/router_0 | Completed switch allocation for VC 0 at input 4 (front: 8).
+30 | network_0/router_0 |   Scheduling switch connection from input 4.0 to output 6.0.
+30 | network_0/router_1 | Adding flit 3 to VC 0 at input 4 (state: active, empty).
+30 | network_0/router_1 | Beginning switch allocation for VC 0 at input 4 (front: 3).
+30 | network_0/router_1 |   Requesting output 0.0 (non-spec, pri: 0).
+30 | network_0/router_1/sw_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+30 | network_0/router_1/sw_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+30 | network_0/router_1 | Assigning output 0.0 to VC 0 at input 4.0.
+30 | network_0/router_1 | Completed switch allocation for VC 0 at input 4 (front: 3).
+30 | network_0/router_1 |   Scheduling switch connection from input 4.0 to output 0.0.
+30 | network_0/router_2 | Adding flit 12 to VC 0 at input 1 (state: vc_alloc, front: 10).
+30 | network_0/router_2 | Beginning VC allocation for VC 0 at input 1 (front: 10).
+30 | network_0/router_2 |   VC 0 at output 4 is in use by VC 0 at input 1 (front flit: 10).
+30 | network_0/router_2 | Beginning crossbar traversal for flit 7 from input 4.0 to output 2.0.
+30 | network_0/router_2 | Completed VC allocation for VC 0 at input 1 (front: 10).
+30 | network_0/router_2 |   No output VC allocated.
+30 | network_0/router_2 | Completed crossbar traversal for flit 7 from input 4.0 to output 2.0.
+30 | network_0/router_2 | Buffering flit 7 at output 2.
+30 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 6.
+30 | network_0/network_0_fchan_0 | Completed channel traversal for flit 4.
+30 | network_0/router_2 | Sending flit 7 to channel at output 2.
+31 | node10 | Ejecting flit 6 (packet 1) from VC 0.
+31 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 7 with delay 1.
+31 | network_0/router_1 | Received flit 4 from channel at input 4.
+31 | traffic_manager | Selected output VC 0 is full for flit 18.
+31 | traffic_manager | Selected output VC 0 is full for flit 13.
+31 | node10 | Injecting credit for VC 0 into subnet 0.
+31 | node10 | Retiring flit 6 (packet 1, src = 5, dest = -1, hops = 3, flat = 14).
+31 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+31 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (front flit: 9).
+31 | network_0/router_0 | Beginning switch allocation for VC 0 at input 4 (front: 9).
+31 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+31 | network_0/router_0/sw_allocator | Input requests = [ 4 -> [ 6@0 ]  ], output requests = [ 6 -> [ 4@0 ]  ].
+31 | network_0/router_0/sw_allocator | Input grants = [ 4 -> 6  ], output grants = [ 6 -> 4  ].
+31 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 4.0.
+31 | network_0/router_0 | Beginning crossbar traversal for flit 8 from input 4.0 to output 6.0.
+31 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+31 | network_0/router_0 |   No output VC allocated.
+31 | network_0/router_0 | Completed switch allocation for VC 0 at input 4 (front: 9).
+31 | network_0/router_0 |   Scheduling switch connection from input 4.0 to output 6.0.
+31 | network_0/router_0 | Completed crossbar traversal for flit 8 from input 4.0 to output 6.0.
+31 | network_0/router_0 | Buffering flit 8 at output 6.
+31 | network_0/router_1 | Adding flit 4 to VC 0 at input 4 (state: active, empty).
+31 | network_0/router_1 | Beginning switch allocation for VC 0 at input 4 (front: 4).
+31 | network_0/router_1 |   Requesting output 0.0 (non-spec, pri: 0).
+31 | network_0/router_1/sw_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+31 | network_0/router_1/sw_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+31 | network_0/router_1 | Assigning output 0.0 to VC 0 at input 4.0.
+31 | network_0/router_1 | Beginning crossbar traversal for flit 3 from input 4.0 to output 0.0.
+31 | network_0/router_1 | Completed switch allocation for VC 0 at input 4 (front: 4).
+31 | network_0/router_1 |   Scheduling switch connection from input 4.0 to output 0.0.
+31 | network_0/router_1 | Completed crossbar traversal for flit 3 from input 4.0 to output 0.0.
+31 | network_0/router_1 | Buffering flit 3 at output 0.
+31 | network_0/router_2 | Beginning VC allocation for VC 0 at input 1 (front: 10).
+31 | network_0/router_2 |   Requesting VC 0 at output 4 (in_pri: 0, out_pri: 0).
+31 | network_0/router_2/vc_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+31 | network_0/router_2/vc_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+31 | network_0/router_2 | Assigning VC 0 at output 4 to VC 0 at input 1.
+31 | network_0/router_2 | Completed VC allocation for VC 0 at input 1 (front: 10).
+31 | network_0/router_2 |   Acquiring assigned VC 0 at output 4.
+31 | network_0/router_2/buf_1/vc_0 | Changing state from vc_alloc to active.
+31 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 7.
+31 | network_0/router_0 | Sending flit 8 to channel at output 6.
+31 | network_0/router_1 | Sending flit 3 to channel at output 0.
+32 | node10 | Ejecting flit 7 (packet 1) from VC 0.
+32 | network_0/network_0_fchan_egress4 | Beginning channel traversal for flit 3 with delay 1.
+32 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 8 with delay 1.
+32 | node3 | Enqueuing packet 4 at time 32.
+32 | node3 | Enqueuing flit 20 (packet 4) at time 32.
+32 | node3 | Enqueuing flit 21 (packet 4) at time 32.
+32 | node3 | Enqueuing flit 22 (packet 4) at time 32.
+32 | node3 | Enqueuing flit 23 (packet 4) at time 32.
+32 | node3 | Enqueuing flit 24 (packet 4) at time 32.
+32 | traffic_manager | Selected output VC 0 is full for flit 18.
+32 | traffic_manager | Finding output VC for flit 20:
+32 | traffic_manager |   Selected output VC 0.
+32 | node3 | Generating lookahead routing info for flit 20.
+32 | node3 | Injecting flit 20 into subnet 0 at time 32 with priority 0.
+32 | traffic_manager | Selected output VC 0 is full for flit 13.
+32 | node10 | Injecting credit for VC 0 into subnet 0.
+32 | node10 | Retiring flit 7 (packet 1, src = 5, dest = -1, hops = 3, flat = 14).
+32 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+32 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+32 | network_0/router_0 | Beginning crossbar traversal for flit 9 from input 4.0 to output 6.0.
+32 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+32 | network_0/router_0 |   No output VC allocated.
+32 | network_0/router_0 | Completed crossbar traversal for flit 9 from input 4.0 to output 6.0.
+32 | network_0/router_0 | Buffering flit 9 at output 6.
+32 | network_0/router_1 | Beginning crossbar traversal for flit 4 from input 4.0 to output 0.0.
+32 | network_0/router_1 | Completed crossbar traversal for flit 4 from input 4.0 to output 0.0.
+32 | network_0/router_1 | Buffering flit 4 at output 0.
+32 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 10).
+32 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+32 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+32 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+32 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+32 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 10).
+32 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+32 | network_0/router_2 | Updating lookahead routing information for flit 10.
+32 | network_0/network_0_fchan_egress4 | Completed channel traversal for flit 3.
+32 | network_0/network_0_fchan_2 | Completed channel traversal for flit 8.
+32 | network_0/router_0 | Sending flit 9 to channel at output 6.
+32 | network_0/router_1 | Sending flit 4 to channel at output 0.
+33 | node4 | Ejecting flit 3 (packet 0) from VC 0.
+33 | network_0/network_0_fchan_ingress3 | Beginning channel traversal for flit 20 with delay 1.
+33 | network_0/network_0_fchan_egress4 | Beginning channel traversal for flit 4 with delay 1.
+33 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 9 with delay 1.
+33 | network_0/router_2 | Received flit 8 from channel at input 4.
+33 | traffic_manager | Selected output VC 0 is full for flit 18.
+33 | node3 | Injecting flit 21 into subnet 0 at time 33 with priority 0.
+33 | traffic_manager | Selected output VC 0 is full for flit 13.
+33 | node4 | Injecting credit for VC 0 into subnet 0.
+33 | node4 | Retiring flit 3 (packet 0, src = 9, dest = -1, hops = 3, flat = 15).
+33 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+33 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+33 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+33 | network_0/router_0 |   No output VC allocated.
+33 | network_0/router_2 | Adding flit 8 to VC 0 at input 4 (state: active, empty).
+33 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 11).
+33 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+33 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 8).
+33 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+33 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  4 -> [ 2@0 ]  ], output requests = [ 2 -> [ 4@0 ]  4 -> [ 1@0 ]  ].
+33 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  4 -> 2  ], output grants = [ 2 -> 4  4 -> 1  ].
+33 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+33 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 4.0.
+33 | network_0/router_2 | Beginning crossbar traversal for flit 10 from input 1.0 to output 4.0.
+33 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 11).
+33 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+33 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 8).
+33 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 2.0.
+33 | network_0/router_2 | Completed crossbar traversal for flit 10 from input 1.0 to output 4.0.
+33 | network_0/router_2 | Buffering flit 10 at output 4.
+33 | network_0/network_0_fchan_ingress3 | Completed channel traversal for flit 20.
+33 | network_0/network_0_fchan_egress4 | Completed channel traversal for flit 4.
+33 | network_0/network_0_fchan_2 | Completed channel traversal for flit 9.
+33 | network_0/router_2 | Sending flit 10 to channel at output 4.
+34 | node4 | Ejecting flit 4 (packet 0) from VC 0.
+34 | network_0/network_0_fchan_ingress3 | Beginning channel traversal for flit 21 with delay 1.
+34 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 10 with delay 1.
+34 | network_0/router_0 | Received flit 20 from channel at input 3.
+34 | network_0/router_2 | Received flit 9 from channel at input 4.
+34 | node8 | Enqueuing packet 5 at time 34.
+34 | node8 | Enqueuing flit 25 (packet 5) at time 34.
+34 | node8 | Enqueuing flit 26 (packet 5) at time 34.
+34 | node8 | Enqueuing flit 27 (packet 5) at time 34.
+34 | node8 | Enqueuing flit 28 (packet 5) at time 34.
+34 | node8 | Enqueuing flit 29 (packet 5) at time 34.
+34 | traffic_manager | Selected output VC 0 is full for flit 18.
+34 | node3 | Injecting flit 22 into subnet 0 at time 34 with priority 0.
+34 | traffic_manager | Finding output VC for flit 25:
+34 | traffic_manager |   Selected output VC 0.
+34 | node8 | Generating lookahead routing info for flit 25.
+34 | node8 | Injecting flit 25 into subnet 0 at time 34 with priority 0.
+34 | node9 | Injecting flit 13 into subnet 0 at time 34 with priority 0.
+34 | node4 | Injecting credit for VC 0 into subnet 0.
+34 | node4 | Retiring flit 4 (packet 0, src = 9, dest = -1, hops = 3, flat = 15).
+34 | node4 | Retiring packet 0 (plat = 21, nlat = 21, frag = 3, src = 9, dest = 4).
+34 | network_0/router_0 | Adding flit 20 to VC 0 at input 3 (state: idle, empty).
+34 | network_0/router_0 | Using precomputed lookahead routing information for VC 0 at input 3 (front: 20).
+34 | network_0/router_0/buf_3/vc_0 | Changing state from idle to vc_alloc.
+34 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+34 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+34 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+34 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+34 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+34 | network_0/router_0 |   No output VC allocated.
+34 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+34 | network_0/router_0 |   No output VC allocated.
+34 | network_0/router_2 | Adding flit 9 to VC 0 at input 4 (state: active, empty).
+34 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 12).
+34 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+34 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 9).
+34 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+34 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  4 -> [ 2@0 ]  ], output requests = [ 2 -> [ 4@0 ]  4 -> [ 1@0 ]  ].
+34 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  4 -> 2  ], output grants = [ 2 -> 4  4 -> 1  ].
+34 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+34 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 4.0.
+34 | network_0/router_2 | Beginning crossbar traversal for flit 11 from input 1.0 to output 4.0.
+34 | network_0/router_2 | Beginning crossbar traversal for flit 8 from input 4.0 to output 2.0.
+34 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 12).
+34 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+34 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 9).
+34 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 2.0.
+34 | network_0/router_2 | Completed crossbar traversal for flit 11 from input 1.0 to output 4.0.
+34 | network_0/router_2 | Buffering flit 11 at output 4.
+34 | network_0/router_2 | Completed crossbar traversal for flit 8 from input 4.0 to output 2.0.
+34 | network_0/router_2 | Buffering flit 8 at output 2.
+34 | network_0/network_0_fchan_ingress3 | Completed channel traversal for flit 21.
+34 | network_0/network_0_fchan_8 | Completed channel traversal for flit 10.
+34 | network_0/router_2 | Sending flit 8 to channel at output 2.
+34 | network_0/router_2 | Sending flit 11 to channel at output 4.
+35 | network_0/network_0_fchan_ingress3 | Beginning channel traversal for flit 22 with delay 1.
+35 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 25 with delay 1.
+35 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 13 with delay 1.
+35 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 8 with delay 1.
+35 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 11 with delay 1.
+35 | network_0/router_0 | Received flit 21 from channel at input 3.
+35 | network_0/router_0 | Received flit 10 from channel at input 6.
+35 | traffic_manager | Selected output VC 0 is full for flit 18.
+35 | traffic_manager | Selected output VC 0 is full for flit 23.
+35 | node8 | Injecting flit 26 into subnet 0 at time 35 with priority 0.
+35 | node9 | Injecting flit 14 into subnet 0 at time 35 with priority 0.
+35 | network_0/router_0 | Adding flit 21 to VC 0 at input 3 (state: vc_alloc, front: 20).
+35 | network_0/router_0 | Adding flit 10 to VC 0 at input 6 (state: idle, empty).
+35 | network_0/router_0 | Using precomputed lookahead routing information for VC 0 at input 6 (front: 10).
+35 | network_0/router_0/buf_6/vc_0 | Changing state from idle to vc_alloc.
+35 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+35 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+35 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+35 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+35 | network_0/router_0 | Beginning VC allocation for VC 0 at input 6 (front: 10).
+35 | network_0/router_0 |   Requesting VC 0 at output 3 (in_pri: 0, out_pri: 0).
+35 | network_0/router_0/vc_allocator | Input requests = [ 6 -> [ 3@0 ]  ], output requests = [ 3 -> [ 6@0 ]  ].
+35 | network_0/router_0/vc_allocator | Input grants = [ 6 -> 3  ], output grants = [ 3 -> 6  ].
+35 | network_0/router_0 | Assigning VC 0 at output 3 to VC 0 at input 6.
+35 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+35 | network_0/router_0 |   No output VC allocated.
+35 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+35 | network_0/router_0 |   No output VC allocated.
+35 | network_0/router_0 | Completed VC allocation for VC 0 at input 6 (front: 10).
+35 | network_0/router_0 |   Acquiring assigned VC 0 at output 3.
+35 | network_0/router_0/buf_6/vc_0 | Changing state from vc_alloc to active.
+35 | network_0/router_2 | Beginning crossbar traversal for flit 12 from input 1.0 to output 4.0.
+35 | network_0/router_2 | Beginning crossbar traversal for flit 9 from input 4.0 to output 2.0.
+35 | network_0/router_2 | Completed crossbar traversal for flit 12 from input 1.0 to output 4.0.
+35 | network_0/router_2 | Buffering flit 12 at output 4.
+35 | network_0/router_2 | Completed crossbar traversal for flit 9 from input 4.0 to output 2.0.
+35 | network_0/router_2 | Buffering flit 9 at output 2.
+35 | network_0/network_0_fchan_ingress3 | Completed channel traversal for flit 22.
+35 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 25.
+35 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 13.
+35 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 8.
+35 | network_0/network_0_fchan_8 | Completed channel traversal for flit 11.
+35 | network_0/router_2 | Sending flit 9 to channel at output 2.
+35 | network_0/router_2 | Sending flit 12 to channel at output 4.
+36 | node10 | Ejecting flit 8 (packet 1) from VC 0.
+36 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 26 with delay 1.
+36 | network_0/network_0_fchan_ingress9 | Beginning channel traversal for flit 14 with delay 1.
+36 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 9 with delay 1.
+36 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 12 with delay 1.
+36 | network_0/router_0 | Received flit 22 from channel at input 3.
+36 | network_0/router_0 | Received flit 11 from channel at input 6.
+36 | network_0/router_2 | Received flit 25 from channel at input 0.
+36 | network_0/router_2 | Received flit 13 from channel at input 1.
+36 | traffic_manager | Selected output VC 0 is full for flit 18.
+36 | traffic_manager | Selected output VC 0 is full for flit 23.
+36 | node8 | Injecting flit 27 into subnet 0 at time 36 with priority 0.
+36 | node10 | Injecting credit for VC 0 into subnet 0.
+36 | node10 | Retiring flit 8 (packet 1, src = 5, dest = -1, hops = 3, flat = 15).
+36 | network_0/router_0 | Adding flit 22 to VC 0 at input 3 (state: vc_alloc, front: 20).
+36 | network_0/router_0 | Adding flit 11 to VC 0 at input 6 (state: active, front: 10).
+36 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+36 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+36 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+36 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 4 (empty).
+36 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 10).
+36 | network_0/router_0 |   Requesting output 3.0 (non-spec, pri: 0).
+36 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 3@0 ]  ], output requests = [ 3 -> [ 6@0 ]  ].
+36 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 3  ], output grants = [ 3 -> 6  ].
+36 | network_0/router_0 | Assigning output 3.0 to VC 0 at input 6.0.
+36 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+36 | network_0/router_0 |   No output VC allocated.
+36 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+36 | network_0/router_0 |   No output VC allocated.
+36 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 10).
+36 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 3.0.
+36 | network_0/router_2 | Adding flit 25 to VC 0 at input 0 (state: idle, empty).
+36 | network_0/router_2 | Using precomputed lookahead routing information for VC 0 at input 0 (front: 25).
+36 | network_0/router_2/buf_0/vc_0 | Changing state from idle to vc_alloc.
+36 | network_0/router_2 | Adding flit 13 to VC 0 at input 1 (state: active, empty).
+36 | network_0/router_2 | Beginning VC allocation for VC 0 at input 0 (front: 25).
+36 | network_0/router_2 |   Requesting VC 0 at output 6 (in_pri: 0, out_pri: 0).
+36 | network_0/router_2/vc_allocator | Input requests = [ 0 -> [ 6@0 ]  ], output requests = [ 6 -> [ 0@0 ]  ].
+36 | network_0/router_2/vc_allocator | Input grants = [ 0 -> 6  ], output grants = [ 6 -> 0  ].
+36 | network_0/router_2 | Assigning VC 0 at output 6 to VC 0 at input 0.
+36 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 13).
+36 | network_0/router_2 |   VC 0 at output 4 is full.
+36 | network_0/router_2 | Completed VC allocation for VC 0 at input 0 (front: 25).
+36 | network_0/router_2 |   Acquiring assigned VC 0 at output 6.
+36 | network_0/router_2/buf_0/vc_0 | Changing state from vc_alloc to active.
+36 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 13).
+36 | network_0/router_2 |   No output port allocated.
+36 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 26.
+36 | network_0/network_0_fchan_ingress9 | Completed channel traversal for flit 14.
+36 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 9.
+36 | network_0/network_0_fchan_8 | Completed channel traversal for flit 12.
+37 | node10 | Ejecting flit 9 (packet 1) from VC 0.
+37 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 27 with delay 1.
+37 | network_0/router_0 | Received flit 12 from channel at input 6.
+37 | network_0/router_2 | Received flit 26 from channel at input 0.
+37 | network_0/router_2 | Received flit 14 from channel at input 1.
+37 | node13 | Enqueuing packet 6 at time 37.
+37 | node13 | Enqueuing flit 30 (packet 6) at time 37.
+37 | node13 | Enqueuing flit 31 (packet 6) at time 37.
+37 | node13 | Enqueuing flit 32 (packet 6) at time 37.
+37 | node13 | Enqueuing flit 33 (packet 6) at time 37.
+37 | node13 | Enqueuing flit 34 (packet 6) at time 37.
+37 | traffic_manager | Selected output VC 0 is full for flit 18.
+37 | traffic_manager | Selected output VC 0 is full for flit 23.
+37 | traffic_manager | Selected output VC 0 is full for flit 28.
+37 | traffic_manager | Finding output VC for flit 30:
+37 | traffic_manager |   Selected output VC 0.
+37 | node13 | Generating lookahead routing info for flit 30.
+37 | node13 | Injecting flit 30 into subnet 0 at time 37 with priority 0.
+37 | node10 | Injecting credit for VC 0 into subnet 0.
+37 | node10 | Retiring flit 9 (packet 1, src = 5, dest = -1, hops = 3, flat = 15).
+37 | node10 | Retiring packet 1 (plat = 21, nlat = 21, frag = 3, src = 5, dest = 10).
+37 | network_0/router_0 | Adding flit 12 to VC 0 at input 6 (state: active, front: 11).
+37 | network_0/router_0 | Beginning VC allocation for VC 0 at input 0 (front: 15).
+37 | network_0/router_0 |   Requesting VC 0 at output 6 (in_pri: 0, out_pri: 0).
+37 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+37 | network_0/router_0 |   Requesting VC 0 at output 6 (in_pri: 0, out_pri: 0).
+37 | network_0/router_0/vc_allocator | Input requests = [ 0 -> [ 6@0 ]  3 -> [ 6@0 ]  ], output requests = [ 6 -> [ 0@0 3@0 ]  ].
+37 | network_0/router_0/vc_allocator | Input grants = [ 0 -> 6  ], output grants = [ 6 -> 0  ].
+37 | network_0/router_0 | Assigning VC 0 at output 6 to VC 0 at input 0.
+37 | network_0/router_0 | VC allocation failed for VC 0 at input 3.
+37 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 11).
+37 | network_0/router_0 |   Requesting output 3.0 (non-spec, pri: 0).
+37 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 3@0 ]  ], output requests = [ 3 -> [ 6@0 ]  ].
+37 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 3  ], output grants = [ 3 -> 6  ].
+37 | network_0/router_0 | Assigning output 3.0 to VC 0 at input 6.0.
+37 | network_0/router_0 | Beginning crossbar traversal for flit 10 from input 6.0 to output 3.0.
+37 | network_0/router_0 | Completed VC allocation for VC 0 at input 0 (front: 15).
+37 | network_0/router_0 |   Acquiring assigned VC 0 at output 6.
+37 | network_0/router_0/buf_0/vc_0 | Changing state from vc_alloc to active.
+37 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+37 | network_0/router_0 |   No output VC allocated.
+37 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 11).
+37 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 3.0.
+37 | network_0/router_0 | Completed crossbar traversal for flit 10 from input 6.0 to output 3.0.
+37 | network_0/router_0 | Buffering flit 10 at output 3.
+37 | network_0/router_2 | Adding flit 26 to VC 0 at input 0 (state: active, front: 25).
+37 | network_0/router_2 | Adding flit 14 to VC 0 at input 1 (state: active, front: 13).
+37 | network_0/router_2 | Beginning switch allocation for VC 0 at input 0 (front: 25).
+37 | network_0/router_2 |   Requesting output 6.0 (non-spec, pri: 0).
+37 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 13).
+37 | network_0/router_2 |   VC 0 at output 4 is full.
+37 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  ], output requests = [ 6 -> [ 0@0 ]  ].
+37 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 6  ], output grants = [ 6 -> 0  ].
+37 | network_0/router_2 | Assigning output 6.0 to VC 0 at input 0.0.
+37 | network_0/router_2 | Completed switch allocation for VC 0 at input 0 (front: 25).
+37 | network_0/router_2 |   Scheduling switch connection from input 0.0 to output 6.0.
+37 | network_0/router_2 | Updating lookahead routing information for flit 25.
+37 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 13).
+37 | network_0/router_2 |   No output port allocated.
+37 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 27.
+37 | network_0/router_0 | Sending flit 10 to channel at output 3.
+38 | network_0/network_0_fchan_ingress13 | Beginning channel traversal for flit 30 with delay 1.
+38 | network_0/network_0_fchan_egress3 | Beginning channel traversal for flit 10 with delay 1.
+38 | network_0/router_2 | Received flit 27 from channel at input 0.
+38 | traffic_manager | Selected output VC 0 is full for flit 18.
+38 | traffic_manager | Selected output VC 0 is full for flit 23.
+38 | traffic_manager | Selected output VC 0 is full for flit 28.
+38 | node13 | Injecting flit 31 into subnet 0 at time 38 with priority 0.
+38 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+38 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (front flit: 15).
+38 | network_0/router_0 | Beginning switch allocation for VC 0 at input 0 (front: 15).
+38 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+38 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 12).
+38 | network_0/router_0 |   Requesting output 3.0 (non-spec, pri: 0).
+38 | network_0/router_0/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  6 -> [ 3@0 ]  ], output requests = [ 3 -> [ 6@0 ]  6 -> [ 0@0 ]  ].
+38 | network_0/router_0/sw_allocator | Input grants = [ 0 -> 6  6 -> 3  ], output grants = [ 3 -> 6  6 -> 0  ].
+38 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 0.0.
+38 | network_0/router_0 | Assigning output 3.0 to VC 0 at input 6.0.
+38 | network_0/router_0 | Beginning crossbar traversal for flit 11 from input 6.0 to output 3.0.
+38 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+38 | network_0/router_0 |   No output VC allocated.
+38 | network_0/router_0 | Completed switch allocation for VC 0 at input 0 (front: 15).
+38 | network_0/router_0 |   Scheduling switch connection from input 0.0 to output 6.0.
+38 | network_0/router_0 | Updating lookahead routing information for flit 15.
+38 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 12).
+38 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 3.0.
+38 | network_0/router_0 | Completed crossbar traversal for flit 11 from input 6.0 to output 3.0.
+38 | network_0/router_0 | Buffering flit 11 at output 3.
+38 | network_0/router_2 | Adding flit 27 to VC 0 at input 0 (state: active, front: 26).
+38 | network_0/router_2 | Beginning switch allocation for VC 0 at input 0 (front: 26).
+38 | network_0/router_2 |   Requesting output 6.0 (non-spec, pri: 0).
+38 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 13).
+38 | network_0/router_2 |   VC 0 at output 4 is full.
+38 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  ], output requests = [ 6 -> [ 0@0 ]  ].
+38 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 6  ], output grants = [ 6 -> 0  ].
+38 | network_0/router_2 | Assigning output 6.0 to VC 0 at input 0.0.
+38 | network_0/router_2 | Beginning crossbar traversal for flit 25 from input 0.0 to output 6.0.
+38 | network_0/router_2 | Completed switch allocation for VC 0 at input 0 (front: 26).
+38 | network_0/router_2 |   Scheduling switch connection from input 0.0 to output 6.0.
+38 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 13).
+38 | network_0/router_2 |   No output port allocated.
+38 | network_0/router_2 | Completed crossbar traversal for flit 25 from input 0.0 to output 6.0.
+38 | network_0/router_2 | Buffering flit 25 at output 6.
+38 | network_0/network_0_fchan_ingress13 | Completed channel traversal for flit 30.
+38 | network_0/network_0_fchan_egress3 | Completed channel traversal for flit 10.
+38 | network_0/router_0 | Sending flit 11 to channel at output 3.
+38 | network_0/router_2 | Sending flit 25 to channel at output 6.
+39 | node3 | Ejecting flit 10 (packet 2) from VC 0.
+39 | network_0/network_0_fchan_ingress13 | Beginning channel traversal for flit 31 with delay 1.
+39 | network_0/network_0_fchan_egress3 | Beginning channel traversal for flit 11 with delay 1.
+39 | network_0/network_0_fchan_10 | Beginning channel traversal for flit 25 with delay 1.
+39 | network_0/router_3 | Received flit 30 from channel at input 1.
+39 | traffic_manager | Selected output VC 0 is full for flit 18.
+39 | traffic_manager | Selected output VC 0 is full for flit 23.
+39 | node8 | Injecting flit 28 into subnet 0 at time 39 with priority 0.
+39 | node13 | Injecting flit 32 into subnet 0 at time 39 with priority 0.
+39 | node3 | Injecting credit for VC 0 into subnet 0.
+39 | node3 | Retiring flit 10 (packet 2, src = 9, dest = 3, hops = 2, flat = 13).
+39 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+39 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (front flit: 16).
+39 | network_0/router_0 | Beginning switch allocation for VC 0 at input 0 (front: 16).
+39 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+39 | network_0/router_0/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  ], output requests = [ 6 -> [ 0@0 ]  ].
+39 | network_0/router_0/sw_allocator | Input grants = [ 0 -> 6  ], output grants = [ 6 -> 0  ].
+39 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 0.0.
+39 | network_0/router_0 | Beginning crossbar traversal for flit 15 from input 0.0 to output 6.0.
+39 | network_0/router_0 | Beginning crossbar traversal for flit 12 from input 6.0 to output 3.0.
+39 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+39 | network_0/router_0 |   No output VC allocated.
+39 | network_0/router_0 | Completed switch allocation for VC 0 at input 0 (front: 16).
+39 | network_0/router_0 |   Scheduling switch connection from input 0.0 to output 6.0.
+39 | network_0/router_0 | Completed crossbar traversal for flit 15 from input 0.0 to output 6.0.
+39 | network_0/router_0 | Buffering flit 15 at output 6.
+39 | network_0/router_0 | Completed crossbar traversal for flit 12 from input 6.0 to output 3.0.
+39 | network_0/router_0 | Buffering flit 12 at output 3.
+39 | network_0/router_2 | Beginning switch allocation for VC 0 at input 0 (front: 27).
+39 | network_0/router_2 |   Requesting output 6.0 (non-spec, pri: 0).
+39 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 13).
+39 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+39 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  6 -> [ 0@0 ]  ].
+39 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 6  1 -> 4  ], output grants = [ 4 -> 1  6 -> 0  ].
+39 | network_0/router_2 | Assigning output 6.0 to VC 0 at input 0.0.
+39 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+39 | network_0/router_2 | Beginning crossbar traversal for flit 26 from input 0.0 to output 6.0.
+39 | network_0/router_2 | Completed switch allocation for VC 0 at input 0 (front: 27).
+39 | network_0/router_2 |   Scheduling switch connection from input 0.0 to output 6.0.
+39 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 13).
+39 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+39 | network_0/router_2 | Completed crossbar traversal for flit 26 from input 0.0 to output 6.0.
+39 | network_0/router_2 | Buffering flit 26 at output 6.
+39 | network_0/router_3 | Adding flit 30 to VC 0 at input 1 (state: idle, empty).
+39 | network_0/router_3 | Using precomputed lookahead routing information for VC 0 at input 1 (front: 30).
+39 | network_0/router_3/buf_1/vc_0 | Changing state from idle to vc_alloc.
+39 | network_0/router_3 | Beginning VC allocation for VC 0 at input 1 (front: 30).
+39 | network_0/router_3 |   Requesting VC 0 at output 6 (in_pri: 0, out_pri: 0).
+39 | network_0/router_3/vc_allocator | Input requests = [ 1 -> [ 6@0 ]  ], output requests = [ 6 -> [ 1@0 ]  ].
+39 | network_0/router_3/vc_allocator | Input grants = [ 1 -> 6  ], output grants = [ 6 -> 1  ].
+39 | network_0/router_3 | Assigning VC 0 at output 6 to VC 0 at input 1.
+39 | network_0/router_3 | Completed VC allocation for VC 0 at input 1 (front: 30).
+39 | network_0/router_3 |   Acquiring assigned VC 0 at output 6.
+39 | network_0/router_3/buf_1/vc_0 | Changing state from vc_alloc to active.
+39 | network_0/network_0_fchan_ingress13 | Completed channel traversal for flit 31.
+39 | network_0/network_0_fchan_egress3 | Completed channel traversal for flit 11.
+39 | network_0/network_0_fchan_10 | Completed channel traversal for flit 25.
+39 | network_0/router_0 | Sending flit 12 to channel at output 3.
+39 | network_0/router_0 | Sending flit 15 to channel at output 6.
+39 | network_0/router_2 | Sending flit 26 to channel at output 6.
+40 | node3 | Ejecting flit 11 (packet 2) from VC 0.
+40 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 28 with delay 1.
+40 | network_0/network_0_fchan_ingress13 | Beginning channel traversal for flit 32 with delay 1.
+40 | network_0/network_0_fchan_egress3 | Beginning channel traversal for flit 12 with delay 1.
+40 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 15 with delay 1.
+40 | network_0/network_0_fchan_10 | Beginning channel traversal for flit 26 with delay 1.
+40 | network_0/router_3 | Received flit 31 from channel at input 1.
+40 | network_0/router_3 | Received flit 25 from channel at input 6.
+40 | node0 | Injecting flit 18 into subnet 0 at time 40 with priority 0.
+40 | traffic_manager | Selected output VC 0 is full for flit 23.
+40 | node8 | Injecting flit 29 into subnet 0 at time 40 with priority 0.
+40 | traffic_manager | Selected output VC 0 is full for flit 33.
+40 | node3 | Injecting credit for VC 0 into subnet 0.
+40 | node3 | Retiring flit 11 (packet 2, src = 9, dest = -1, hops = 2, flat = 13).
+40 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+40 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (front flit: 17).
+40 | network_0/router_0 | Beginning switch allocation for VC 0 at input 0 (front: 17).
+40 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+40 | network_0/router_0/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  ], output requests = [ 6 -> [ 0@0 ]  ].
+40 | network_0/router_0/sw_allocator | Input grants = [ 0 -> 6  ], output grants = [ 6 -> 0  ].
+40 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 0.0.
+40 | network_0/router_0 | Beginning crossbar traversal for flit 16 from input 0.0 to output 6.0.
+40 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+40 | network_0/router_0 |   No output VC allocated.
+40 | network_0/router_0 | Completed switch allocation for VC 0 at input 0 (front: 17).
+40 | network_0/router_0 |   Scheduling switch connection from input 0.0 to output 6.0.
+40 | network_0/router_0 | Completed crossbar traversal for flit 16 from input 0.0 to output 6.0.
+40 | network_0/router_0 | Buffering flit 16 at output 6.
+40 | network_0/router_2 | Beginning switch allocation for VC 0 at input 1 (front: 14).
+40 | network_0/router_2 |   Requesting output 4.0 (non-spec, pri: 0).
+40 | network_0/router_2/sw_allocator | Input requests = [ 1 -> [ 4@0 ]  ], output requests = [ 4 -> [ 1@0 ]  ].
+40 | network_0/router_2/sw_allocator | Input grants = [ 1 -> 4  ], output grants = [ 4 -> 1  ].
+40 | network_0/router_2 | Assigning output 4.0 to VC 0 at input 1.0.
+40 | network_0/router_2 | Beginning crossbar traversal for flit 27 from input 0.0 to output 6.0.
+40 | network_0/router_2 | Beginning crossbar traversal for flit 13 from input 1.0 to output 4.0.
+40 | network_0/router_2 | Completed switch allocation for VC 0 at input 1 (front: 14).
+40 | network_0/router_2 |   Scheduling switch connection from input 1.0 to output 4.0.
+40 | network_0/router_2 | Completed crossbar traversal for flit 27 from input 0.0 to output 6.0.
+40 | network_0/router_2 | Buffering flit 27 at output 6.
+40 | network_0/router_2 | Completed crossbar traversal for flit 13 from input 1.0 to output 4.0.
+40 | network_0/router_2 | Buffering flit 13 at output 4.
+40 | network_0/router_3 | Adding flit 31 to VC 0 at input 1 (state: active, front: 30).
+40 | network_0/router_3 | Adding flit 25 to VC 0 at input 6 (state: idle, empty).
+40 | network_0/router_3 | Using precomputed lookahead routing information for VC 0 at input 6 (front: 25).
+40 | network_0/router_3/buf_6/vc_0 | Changing state from idle to vc_alloc.
+40 | network_0/router_3 | Beginning VC allocation for VC 0 at input 6 (front: 25).
+40 | network_0/router_3 |   Requesting VC 0 at output 2 (in_pri: 0, out_pri: 0).
+40 | network_0/router_3/vc_allocator | Input requests = [ 6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  ].
+40 | network_0/router_3/vc_allocator | Input grants = [ 6 -> 2  ], output grants = [ 2 -> 6  ].
+40 | network_0/router_3 | Assigning VC 0 at output 2 to VC 0 at input 6.
+40 | network_0/router_3 | Beginning switch allocation for VC 0 at input 1 (front: 30).
+40 | network_0/router_3 |   Requesting output 6.0 (non-spec, pri: 0).
+40 | network_0/router_3/sw_allocator | Input requests = [ 1 -> [ 6@0 ]  ], output requests = [ 6 -> [ 1@0 ]  ].
+40 | network_0/router_3/sw_allocator | Input grants = [ 1 -> 6  ], output grants = [ 6 -> 1  ].
+40 | network_0/router_3 | Assigning output 6.0 to VC 0 at input 1.0.
+40 | network_0/router_3 | Completed VC allocation for VC 0 at input 6 (front: 25).
+40 | network_0/router_3 |   Acquiring assigned VC 0 at output 2.
+40 | network_0/router_3/buf_6/vc_0 | Changing state from vc_alloc to active.
+40 | network_0/router_3 | Completed switch allocation for VC 0 at input 1 (front: 30).
+40 | network_0/router_3 |   Scheduling switch connection from input 1.0 to output 6.0.
+40 | network_0/router_3 | Updating lookahead routing information for flit 30.
+40 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 28.
+40 | network_0/network_0_fchan_ingress13 | Completed channel traversal for flit 32.
+40 | network_0/network_0_fchan_egress3 | Completed channel traversal for flit 12.
+40 | network_0/network_0_fchan_2 | Completed channel traversal for flit 15.
+40 | network_0/network_0_fchan_10 | Completed channel traversal for flit 26.
+40 | network_0/router_0 | Sending flit 16 to channel at output 6.
+40 | network_0/router_2 | Sending flit 13 to channel at output 4.
+40 | network_0/router_2 | Sending flit 27 to channel at output 6.
+41 | node3 | Ejecting flit 12 (packet 2) from VC 0.
+41 | network_0/network_0_fchan_ingress0 | Beginning channel traversal for flit 18 with delay 1.
+41 | network_0/network_0_fchan_ingress8 | Beginning channel traversal for flit 29 with delay 1.
+41 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 16 with delay 1.
+41 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 13 with delay 1.
+41 | network_0/network_0_fchan_10 | Beginning channel traversal for flit 27 with delay 1.
+41 | network_0/router_2 | Received flit 28 from channel at input 0.
+41 | network_0/router_2 | Received flit 15 from channel at input 4.
+41 | network_0/router_3 | Received flit 32 from channel at input 1.
+41 | network_0/router_3 | Received flit 26 from channel at input 6.
+41 | node0 | Injecting flit 19 into subnet 0 at time 41 with priority 0.
+41 | traffic_manager | Selected output VC 0 is full for flit 23.
+41 | traffic_manager | Selected output VC 0 is full for flit 33.
+41 | node3 | Injecting credit for VC 0 into subnet 0.
+41 | node3 | Retiring flit 12 (packet 2, src = 9, dest = -1, hops = 2, flat = 13).
+41 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+41 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (empty).
+41 | network_0/router_0 | Beginning crossbar traversal for flit 17 from input 0.0 to output 6.0.
+41 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+41 | network_0/router_0 |   No output VC allocated.
+41 | network_0/router_0 | Completed crossbar traversal for flit 17 from input 0.0 to output 6.0.
+41 | network_0/router_0 | Buffering flit 17 at output 6.
+41 | network_0/router_2 | Adding flit 28 to VC 0 at input 0 (state: active, empty).
+41 | network_0/router_2 | Adding flit 15 to VC 0 at input 4 (state: idle, empty).
+41 | network_0/router_2 | Using precomputed lookahead routing information for VC 0 at input 4 (front: 15).
+41 | network_0/router_2/buf_4/vc_0 | Changing state from idle to vc_alloc.
+41 | network_0/router_2 | Beginning VC allocation for VC 0 at input 4 (front: 15).
+41 | network_0/router_2 |   Requesting VC 0 at output 1 (in_pri: 0, out_pri: 0).
+41 | network_0/router_2/vc_allocator | Input requests = [ 4 -> [ 1@0 ]  ], output requests = [ 1 -> [ 4@0 ]  ].
+41 | network_0/router_2/vc_allocator | Input grants = [ 4 -> 1  ], output grants = [ 1 -> 4  ].
+41 | network_0/router_2 | Assigning VC 0 at output 1 to VC 0 at input 4.
+41 | network_0/router_2 | Beginning switch allocation for VC 0 at input 0 (front: 28).
+41 | network_0/router_2 |   VC 0 at output 6 is full.
+41 | network_0/router_2 | Beginning crossbar traversal for flit 14 from input 1.0 to output 4.0.
+41 | network_0/router_2 | Completed VC allocation for VC 0 at input 4 (front: 15).
+41 | network_0/router_2 |   Acquiring assigned VC 0 at output 1.
+41 | network_0/router_2/buf_4/vc_0 | Changing state from vc_alloc to active.
+41 | network_0/router_2 | Completed switch allocation for VC 0 at input 0 (front: 28).
+41 | network_0/router_2 |   No output port allocated.
+41 | network_0/router_2 | Completed crossbar traversal for flit 14 from input 1.0 to output 4.0.
+41 | network_0/router_2 | Buffering flit 14 at output 4.
+41 | network_0/router_3 | Adding flit 32 to VC 0 at input 1 (state: active, front: 31).
+41 | network_0/router_3 | Adding flit 26 to VC 0 at input 6 (state: active, front: 25).
+41 | network_0/router_3 | Beginning switch allocation for VC 0 at input 6 (front: 25).
+41 | network_0/router_3 |   Requesting output 2.0 (non-spec, pri: 0).
+41 | network_0/router_3 | Beginning switch allocation for VC 0 at input 1 (front: 31).
+41 | network_0/router_3 |   Requesting output 6.0 (non-spec, pri: 0).
+41 | network_0/router_3/sw_allocator | Input requests = [ 1 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 1@0 ]  ].
+41 | network_0/router_3/sw_allocator | Input grants = [ 1 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 1  ].
+41 | network_0/router_3 | Assigning output 2.0 to VC 0 at input 6.0.
+41 | network_0/router_3 | Assigning output 6.0 to VC 0 at input 1.0.
+41 | network_0/router_3 | Beginning crossbar traversal for flit 30 from input 1.0 to output 6.0.
+41 | network_0/router_3 | Completed switch allocation for VC 0 at input 6 (front: 25).
+41 | network_0/router_3 |   Scheduling switch connection from input 6.0 to output 2.0.
+41 | network_0/router_3 | Completed switch allocation for VC 0 at input 1 (front: 31).
+41 | network_0/router_3 |   Scheduling switch connection from input 1.0 to output 6.0.
+41 | network_0/router_3 | Completed crossbar traversal for flit 30 from input 1.0 to output 6.0.
+41 | network_0/router_3 | Buffering flit 30 at output 6.
+41 | network_0/network_0_fchan_ingress0 | Completed channel traversal for flit 18.
+41 | network_0/network_0_fchan_ingress8 | Completed channel traversal for flit 29.
+41 | network_0/network_0_fchan_2 | Completed channel traversal for flit 16.
+41 | network_0/network_0_fchan_8 | Completed channel traversal for flit 13.
+41 | network_0/network_0_fchan_10 | Completed channel traversal for flit 27.
+41 | network_0/router_0 | Sending flit 17 to channel at output 6.
+41 | network_0/router_2 | Sending flit 14 to channel at output 4.
+41 | network_0/router_3 | Sending flit 30 to channel at output 6.
+42 | network_0/network_0_fchan_ingress0 | Beginning channel traversal for flit 19 with delay 1.
+42 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 17 with delay 1.
+42 | network_0/network_0_fchan_8 | Beginning channel traversal for flit 14 with delay 1.
+42 | network_0/network_0_fchan_14 | Beginning channel traversal for flit 30 with delay 1.
+42 | network_0/router_0 | Received flit 18 from channel at input 0.
+42 | network_0/router_0 | Received flit 13 from channel at input 6.
+42 | network_0/router_2 | Received flit 29 from channel at input 0.
+42 | network_0/router_2 | Received flit 16 from channel at input 4.
+42 | network_0/router_3 | Received flit 27 from channel at input 6.
+42 | traffic_manager | Selected output VC 0 is full for flit 23.
+42 | node13 | Injecting flit 33 into subnet 0 at time 42 with priority 0.
+42 | network_0/router_0 | Adding flit 18 to VC 0 at input 0 (state: active, empty).
+42 | network_0/router_0 | Adding flit 13 to VC 0 at input 6 (state: active, empty).
+42 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+42 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (front flit: 18).
+42 | network_0/router_0 | Beginning switch allocation for VC 0 at input 0 (front: 18).
+42 | network_0/router_0 |   VC 0 at output 6 is full.
+42 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 13).
+42 | network_0/router_0 |   Requesting output 3.0 (non-spec, pri: 0).
+42 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 3@0 ]  ], output requests = [ 3 -> [ 6@0 ]  ].
+42 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 3  ], output grants = [ 3 -> 6  ].
+42 | network_0/router_0 | Assigning output 3.0 to VC 0 at input 6.0.
+42 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+42 | network_0/router_0 |   No output VC allocated.
+42 | network_0/router_0 | Completed switch allocation for VC 0 at input 0 (front: 18).
+42 | network_0/router_0 |   No output port allocated.
+42 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 13).
+42 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 3.0.
+42 | network_0/router_2 | Adding flit 29 to VC 0 at input 0 (state: active, front: 28).
+42 | network_0/router_2 | Adding flit 16 to VC 0 at input 4 (state: active, front: 15).
+42 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 15).
+42 | network_0/router_2 |   Requesting output 1.0 (non-spec, pri: 0).
+42 | network_0/router_2 | Beginning switch allocation for VC 0 at input 0 (front: 28).
+42 | network_0/router_2 |   VC 0 at output 6 is full.
+42 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 1@0 ]  ], output requests = [ 1 -> [ 4@0 ]  ].
+42 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 1  ], output grants = [ 1 -> 4  ].
+42 | network_0/router_2 | Assigning output 1.0 to VC 0 at input 4.0.
+42 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 15).
+42 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 1.0.
+42 | network_0/router_2 | Completed switch allocation for VC 0 at input 0 (front: 28).
+42 | network_0/router_2 |   No output port allocated.
+42 | network_0/router_3 | Adding flit 27 to VC 0 at input 6 (state: active, front: 26).
+42 | network_0/router_3 | Beginning switch allocation for VC 0 at input 6 (front: 26).
+42 | network_0/router_3 |   Requesting output 2.0 (non-spec, pri: 0).
+42 | network_0/router_3 | Beginning switch allocation for VC 0 at input 1 (front: 32).
+42 | network_0/router_3 |   Requesting output 6.0 (non-spec, pri: 0).
+42 | network_0/router_3/sw_allocator | Input requests = [ 1 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 1@0 ]  ].
+42 | network_0/router_3/sw_allocator | Input grants = [ 1 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 1  ].
+42 | network_0/router_3 | Assigning output 2.0 to VC 0 at input 6.0.
+42 | network_0/router_3 | Assigning output 6.0 to VC 0 at input 1.0.
+42 | network_0/router_3 | Beginning crossbar traversal for flit 25 from input 6.0 to output 2.0.
+42 | network_0/router_3 | Beginning crossbar traversal for flit 31 from input 1.0 to output 6.0.
+42 | network_0/router_3 | Completed switch allocation for VC 0 at input 6 (front: 26).
+42 | network_0/router_3 |   Scheduling switch connection from input 6.0 to output 2.0.
+42 | network_0/router_3 | Completed switch allocation for VC 0 at input 1 (front: 32).
+42 | network_0/router_3 |   Scheduling switch connection from input 1.0 to output 6.0.
+42 | network_0/router_3 | Completed crossbar traversal for flit 25 from input 6.0 to output 2.0.
+42 | network_0/router_3 | Buffering flit 25 at output 2.
+42 | network_0/router_3 | Completed crossbar traversal for flit 31 from input 1.0 to output 6.0.
+42 | network_0/router_3 | Buffering flit 31 at output 6.
+42 | network_0/network_0_fchan_ingress0 | Completed channel traversal for flit 19.
+42 | network_0/network_0_fchan_2 | Completed channel traversal for flit 17.
+42 | network_0/network_0_fchan_8 | Completed channel traversal for flit 14.
+42 | network_0/network_0_fchan_14 | Completed channel traversal for flit 30.
+42 | network_0/router_3 | Sending flit 25 to channel at output 2.
+42 | network_0/router_3 | Sending flit 31 to channel at output 6.
+43 | network_0/network_0_fchan_ingress13 | Beginning channel traversal for flit 33 with delay 1.
+43 | network_0/network_0_fchan_egress14 | Beginning channel traversal for flit 25 with delay 1.
+43 | network_0/network_0_fchan_14 | Beginning channel traversal for flit 31 with delay 1.
+43 | network_0/router_0 | Received flit 19 from channel at input 0.
+43 | network_0/router_0 | Received flit 14 from channel at input 6.
+43 | network_0/router_2 | Received flit 17 from channel at input 4.
+43 | network_0/router_2 | Received flit 30 from channel at input 6.
+43 | traffic_manager | Selected output VC 0 is full for flit 23.
+43 | node13 | Injecting flit 34 into subnet 0 at time 43 with priority 0.
+43 | network_0/router_0 | Adding flit 19 to VC 0 at input 0 (state: active, front: 18).
+43 | network_0/router_0 | Adding flit 14 to VC 0 at input 6 (state: active, empty).
+43 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+43 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (front flit: 18).
+43 | network_0/router_0 | Beginning switch allocation for VC 0 at input 0 (front: 18).
+43 | network_0/router_0 |   VC 0 at output 6 is full.
+43 | network_0/router_0 | Beginning switch allocation for VC 0 at input 6 (front: 14).
+43 | network_0/router_0 |   Requesting output 3.0 (non-spec, pri: 0).
+43 | network_0/router_0/sw_allocator | Input requests = [ 6 -> [ 3@0 ]  ], output requests = [ 3 -> [ 6@0 ]  ].
+43 | network_0/router_0/sw_allocator | Input grants = [ 6 -> 3  ], output grants = [ 3 -> 6  ].
+43 | network_0/router_0 | Assigning output 3.0 to VC 0 at input 6.0.
+43 | network_0/router_0 | Beginning crossbar traversal for flit 13 from input 6.0 to output 3.0.
+43 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+43 | network_0/router_0 |   No output VC allocated.
+43 | network_0/router_0 | Completed switch allocation for VC 0 at input 0 (front: 18).
+43 | network_0/router_0 |   No output port allocated.
+43 | network_0/router_0 | Completed switch allocation for VC 0 at input 6 (front: 14).
+43 | network_0/router_0 |   Scheduling switch connection from input 6.0 to output 3.0.
+43 | network_0/router_0 | Completed crossbar traversal for flit 13 from input 6.0 to output 3.0.
+43 | network_0/router_0 | Buffering flit 13 at output 3.
+43 | network_0/router_2 | Adding flit 17 to VC 0 at input 4 (state: active, front: 16).
+43 | network_0/router_2 | Adding flit 30 to VC 0 at input 6 (state: idle, empty).
+43 | network_0/router_2 | Using precomputed lookahead routing information for VC 0 at input 6 (front: 30).
+43 | network_0/router_2/buf_6/vc_0 | Changing state from idle to vc_alloc.
+43 | network_0/router_2 | Beginning VC allocation for VC 0 at input 6 (front: 30).
+43 | network_0/router_2 |   Requesting VC 0 at output 2 (in_pri: 0, out_pri: 0).
+43 | network_0/router_2/vc_allocator | Input requests = [ 6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  ].
+43 | network_0/router_2/vc_allocator | Input grants = [ 6 -> 2  ], output grants = [ 2 -> 6  ].
+43 | network_0/router_2 | Assigning VC 0 at output 2 to VC 0 at input 6.
+43 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 16).
+43 | network_0/router_2 |   Requesting output 1.0 (non-spec, pri: 0).
+43 | network_0/router_2 | Beginning switch allocation for VC 0 at input 0 (front: 28).
+43 | network_0/router_2 |   VC 0 at output 6 is full.
+43 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 1@0 ]  ], output requests = [ 1 -> [ 4@0 ]  ].
+43 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 1  ], output grants = [ 1 -> 4  ].
+43 | network_0/router_2 | Assigning output 1.0 to VC 0 at input 4.0.
+43 | network_0/router_2 | Beginning crossbar traversal for flit 15 from input 4.0 to output 1.0.
+43 | network_0/router_2 | Completed VC allocation for VC 0 at input 6 (front: 30).
+43 | network_0/router_2 |   Acquiring assigned VC 0 at output 2.
+43 | network_0/router_2/buf_6/vc_0 | Changing state from vc_alloc to active.
+43 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 16).
+43 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 1.0.
+43 | network_0/router_2 | Completed switch allocation for VC 0 at input 0 (front: 28).
+43 | network_0/router_2 |   No output port allocated.
+43 | network_0/router_2 | Completed crossbar traversal for flit 15 from input 4.0 to output 1.0.
+43 | network_0/router_2 | Buffering flit 15 at output 1.
+43 | network_0/router_3 | Beginning switch allocation for VC 0 at input 6 (front: 27).
+43 | network_0/router_3 |   Requesting output 2.0 (non-spec, pri: 0).
+43 | network_0/router_3/sw_allocator | Input requests = [ 6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  ].
+43 | network_0/router_3/sw_allocator | Input grants = [ 6 -> 2  ], output grants = [ 2 -> 6  ].
+43 | network_0/router_3 | Assigning output 2.0 to VC 0 at input 6.0.
+43 | network_0/router_3 | Beginning crossbar traversal for flit 26 from input 6.0 to output 2.0.
+43 | network_0/router_3 | Beginning crossbar traversal for flit 32 from input 1.0 to output 6.0.
+43 | network_0/router_3 | Completed switch allocation for VC 0 at input 6 (front: 27).
+43 | network_0/router_3 |   Scheduling switch connection from input 6.0 to output 2.0.
+43 | network_0/router_3 | Completed crossbar traversal for flit 26 from input 6.0 to output 2.0.
+43 | network_0/router_3 | Buffering flit 26 at output 2.
+43 | network_0/router_3 | Completed crossbar traversal for flit 32 from input 1.0 to output 6.0.
+43 | network_0/router_3 | Buffering flit 32 at output 6.
+43 | network_0/network_0_fchan_ingress13 | Completed channel traversal for flit 33.
+43 | network_0/network_0_fchan_egress14 | Completed channel traversal for flit 25.
+43 | network_0/network_0_fchan_14 | Completed channel traversal for flit 31.
+43 | network_0/router_0 | Sending flit 13 to channel at output 3.
+43 | network_0/router_2 | Sending flit 15 to channel at output 1.
+43 | network_0/router_3 | Sending flit 26 to channel at output 2.
+43 | network_0/router_3 | Sending flit 32 to channel at output 6.
+44 | node14 | Ejecting flit 25 (packet 5) from VC 0.
+44 | network_0/network_0_fchan_ingress13 | Beginning channel traversal for flit 34 with delay 1.
+44 | network_0/network_0_fchan_egress3 | Beginning channel traversal for flit 13 with delay 1.
+44 | network_0/network_0_fchan_egress9 | Beginning channel traversal for flit 15 with delay 1.
+44 | network_0/network_0_fchan_egress14 | Beginning channel traversal for flit 26 with delay 1.
+44 | network_0/network_0_fchan_14 | Beginning channel traversal for flit 32 with delay 1.
+44 | network_0/router_2 | Received flit 31 from channel at input 6.
+44 | network_0/router_3 | Received flit 33 from channel at input 1.
+44 | traffic_manager | Selected output VC 0 is full for flit 23.
+44 | node14 | Injecting credit for VC 0 into subnet 0.
+44 | node14 | Retiring flit 25 (packet 5, src = 8, dest = 14, hops = 2, flat = 10).
+44 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+44 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (front flit: 18).
+44 | network_0/router_0 | Beginning switch allocation for VC 0 at input 0 (front: 18).
+44 | network_0/router_0 |   VC 0 at output 6 is full.
+44 | network_0/router_0 | Beginning crossbar traversal for flit 14 from input 6.0 to output 3.0.
+44 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+44 | network_0/router_0 |   No output VC allocated.
+44 | network_0/router_0 | Completed switch allocation for VC 0 at input 0 (front: 18).
+44 | network_0/router_0 |   No output port allocated.
+44 | network_0/router_0 | Completed crossbar traversal for flit 14 from input 6.0 to output 3.0.
+44 | network_0/router_0 | Buffering flit 14 at output 3.
+44 | network_0/router_2 | Adding flit 31 to VC 0 at input 6 (state: active, front: 30).
+44 | network_0/router_2 | Beginning switch allocation for VC 0 at input 6 (front: 30).
+44 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+44 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 17).
+44 | network_0/router_2 |   Requesting output 1.0 (non-spec, pri: 0).
+44 | network_0/router_2 | Beginning switch allocation for VC 0 at input 0 (front: 28).
+44 | network_0/router_2 |   Requesting output 6.0 (non-spec, pri: 0).
+44 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  4 -> [ 1@0 ]  6 -> [ 2@0 ]  ], output requests = [ 1 -> [ 4@0 ]  2 -> [ 6@0 ]  6 -> [ 0@0 ]  ].
+44 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 6  4 -> 1  6 -> 2  ], output grants = [ 1 -> 4  2 -> 6  6 -> 0  ].
+44 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 6.0.
+44 | network_0/router_2 | Assigning output 1.0 to VC 0 at input 4.0.
+44 | network_0/router_2 | Assigning output 6.0 to VC 0 at input 0.0.
+44 | network_0/router_2 | Beginning crossbar traversal for flit 16 from input 4.0 to output 1.0.
+44 | network_0/router_2 | Completed switch allocation for VC 0 at input 6 (front: 30).
+44 | network_0/router_2 |   Scheduling switch connection from input 6.0 to output 2.0.
+44 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 17).
+44 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 1.0.
+44 | network_0/router_2 | Completed switch allocation for VC 0 at input 0 (front: 28).
+44 | network_0/router_2 |   Scheduling switch connection from input 0.0 to output 6.0.
+44 | network_0/router_2 | Completed crossbar traversal for flit 16 from input 4.0 to output 1.0.
+44 | network_0/router_2 | Buffering flit 16 at output 1.
+44 | network_0/router_3 | Adding flit 33 to VC 0 at input 1 (state: active, empty).
+44 | network_0/router_3 | Beginning switch allocation for VC 0 at input 1 (front: 33).
+44 | network_0/router_3 |   VC 0 at output 6 is full.
+44 | network_0/router_3 | Beginning crossbar traversal for flit 27 from input 6.0 to output 2.0.
+44 | network_0/router_3 | Completed switch allocation for VC 0 at input 1 (front: 33).
+44 | network_0/router_3 |   No output port allocated.
+44 | network_0/router_3 | Completed crossbar traversal for flit 27 from input 6.0 to output 2.0.
+44 | network_0/router_3 | Buffering flit 27 at output 2.
+44 | network_0/network_0_fchan_ingress13 | Completed channel traversal for flit 34.
+44 | network_0/network_0_fchan_egress3 | Completed channel traversal for flit 13.
+44 | network_0/network_0_fchan_egress9 | Completed channel traversal for flit 15.
+44 | network_0/network_0_fchan_egress14 | Completed channel traversal for flit 26.
+44 | network_0/network_0_fchan_14 | Completed channel traversal for flit 32.
+44 | network_0/router_0 | Sending flit 14 to channel at output 3.
+44 | network_0/router_2 | Sending flit 16 to channel at output 1.
+44 | network_0/router_3 | Sending flit 27 to channel at output 2.
+45 | node3 | Ejecting flit 13 (packet 2) from VC 0.
+45 | node9 | Ejecting flit 15 (packet 3) from VC 0.
+45 | node14 | Ejecting flit 26 (packet 5) from VC 0.
+45 | network_0/network_0_fchan_egress3 | Beginning channel traversal for flit 14 with delay 1.
+45 | network_0/network_0_fchan_egress9 | Beginning channel traversal for flit 16 with delay 1.
+45 | network_0/network_0_fchan_egress14 | Beginning channel traversal for flit 27 with delay 1.
+45 | network_0/router_2 | Received flit 32 from channel at input 6.
+45 | network_0/router_3 | Received flit 34 from channel at input 1.
+45 | traffic_manager | Selected output VC 0 is full for flit 23.
+45 | node3 | Injecting credit for VC 0 into subnet 0.
+45 | node3 | Retiring flit 13 (packet 2, src = 9, dest = -1, hops = 2, flat = 11).
+45 | node9 | Injecting credit for VC 0 into subnet 0.
+45 | node9 | Retiring flit 15 (packet 3, src = 0, dest = 9, hops = 2, flat = 19).
+45 | node14 | Injecting credit for VC 0 into subnet 0.
+45 | node14 | Retiring flit 26 (packet 5, src = 8, dest = -1, hops = 2, flat = 10).
+45 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+45 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (front flit: 18).
+45 | network_0/router_0 | Beginning switch allocation for VC 0 at input 0 (front: 18).
+45 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+45 | network_0/router_0/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  ], output requests = [ 6 -> [ 0@0 ]  ].
+45 | network_0/router_0/sw_allocator | Input grants = [ 0 -> 6  ], output grants = [ 6 -> 0  ].
+45 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 0.0.
+45 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+45 | network_0/router_0 |   No output VC allocated.
+45 | network_0/router_0 | Completed switch allocation for VC 0 at input 0 (front: 18).
+45 | network_0/router_0 |   Scheduling switch connection from input 0.0 to output 6.0.
+45 | network_0/router_2 | Adding flit 32 to VC 0 at input 6 (state: active, front: 31).
+45 | network_0/router_2 | Beginning switch allocation for VC 0 at input 6 (front: 31).
+45 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+45 | network_0/router_2 | Beginning switch allocation for VC 0 at input 0 (front: 29).
+45 | network_0/router_2 |   Requesting output 6.0 (non-spec, pri: 0).
+45 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 0@0 ]  ].
+45 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 0  ].
+45 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 6.0.
+45 | network_0/router_2 | Assigning output 6.0 to VC 0 at input 0.0.
+45 | network_0/router_2 | Beginning crossbar traversal for flit 30 from input 6.0 to output 2.0.
+45 | network_0/router_2 | Beginning crossbar traversal for flit 17 from input 4.0 to output 1.0.
+45 | network_0/router_2 | Beginning crossbar traversal for flit 28 from input 0.0 to output 6.0.
+45 | network_0/router_2 | Completed switch allocation for VC 0 at input 6 (front: 31).
+45 | network_0/router_2 |   Scheduling switch connection from input 6.0 to output 2.0.
+45 | network_0/router_2 | Completed switch allocation for VC 0 at input 0 (front: 29).
+45 | network_0/router_2 |   Scheduling switch connection from input 0.0 to output 6.0.
+45 | network_0/router_2 | Completed crossbar traversal for flit 30 from input 6.0 to output 2.0.
+45 | network_0/router_2 | Buffering flit 30 at output 2.
+45 | network_0/router_2 | Completed crossbar traversal for flit 17 from input 4.0 to output 1.0.
+45 | network_0/router_2 | Buffering flit 17 at output 1.
+45 | network_0/router_2 | Completed crossbar traversal for flit 28 from input 0.0 to output 6.0.
+45 | network_0/router_2 | Buffering flit 28 at output 6.
+45 | network_0/router_3 | Adding flit 34 to VC 0 at input 1 (state: active, front: 33).
+45 | network_0/router_3 | Beginning switch allocation for VC 0 at input 1 (front: 33).
+45 | network_0/router_3 |   VC 0 at output 6 is full.
+45 | network_0/router_3 | Completed switch allocation for VC 0 at input 1 (front: 33).
+45 | network_0/router_3 |   No output port allocated.
+45 | network_0/network_0_fchan_egress3 | Completed channel traversal for flit 14.
+45 | network_0/network_0_fchan_egress9 | Completed channel traversal for flit 16.
+45 | network_0/network_0_fchan_egress14 | Completed channel traversal for flit 27.
+45 | network_0/router_2 | Sending flit 17 to channel at output 1.
+45 | network_0/router_2 | Sending flit 30 to channel at output 2.
+45 | network_0/router_2 | Sending flit 28 to channel at output 6.
+46 | node3 | Ejecting flit 14 (packet 2) from VC 0.
+46 | node9 | Ejecting flit 16 (packet 3) from VC 0.
+46 | node14 | Ejecting flit 27 (packet 5) from VC 0.
+46 | network_0/network_0_fchan_egress9 | Beginning channel traversal for flit 17 with delay 1.
+46 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 30 with delay 1.
+46 | network_0/network_0_fchan_10 | Beginning channel traversal for flit 28 with delay 1.
+46 | traffic_manager | Selected output VC 0 is full for flit 23.
+46 | node3 | Injecting credit for VC 0 into subnet 0.
+46 | node3 | Retiring flit 14 (packet 2, src = 9, dest = -1, hops = 2, flat = 11).
+46 | node3 | Retiring packet 2 (plat = 27, nlat = 20, frag = 3, src = 9, dest = 3).
+46 | node9 | Injecting credit for VC 0 into subnet 0.
+46 | node9 | Retiring flit 16 (packet 3, src = 0, dest = -1, hops = 2, flat = 19).
+46 | node14 | Injecting credit for VC 0 into subnet 0.
+46 | node14 | Retiring flit 27 (packet 5, src = 8, dest = -1, hops = 2, flat = 10).
+46 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+46 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (front flit: 19).
+46 | network_0/router_0 | Beginning switch allocation for VC 0 at input 0 (front: 19).
+46 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+46 | network_0/router_0/sw_allocator | Input requests = [ 0 -> [ 6@0 ]  ], output requests = [ 6 -> [ 0@0 ]  ].
+46 | network_0/router_0/sw_allocator | Input grants = [ 0 -> 6  ], output grants = [ 6 -> 0  ].
+46 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 0.0.
+46 | network_0/router_0 | Beginning crossbar traversal for flit 18 from input 0.0 to output 6.0.
+46 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+46 | network_0/router_0 |   No output VC allocated.
+46 | network_0/router_0 | Completed switch allocation for VC 0 at input 0 (front: 19).
+46 | network_0/router_0 |   Scheduling switch connection from input 0.0 to output 6.0.
+46 | network_0/router_0 | Completed crossbar traversal for flit 18 from input 0.0 to output 6.0.
+46 | network_0/router_0 | Buffering flit 18 at output 6.
+46 | network_0/router_2 | Beginning switch allocation for VC 0 at input 6 (front: 32).
+46 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+46 | network_0/router_2/sw_allocator | Input requests = [ 6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  ].
+46 | network_0/router_2/sw_allocator | Input grants = [ 6 -> 2  ], output grants = [ 2 -> 6  ].
+46 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 6.0.
+46 | network_0/router_2 | Beginning crossbar traversal for flit 31 from input 6.0 to output 2.0.
+46 | network_0/router_2 | Beginning crossbar traversal for flit 29 from input 0.0 to output 6.0.
+46 | network_0/router_2 | Completed switch allocation for VC 0 at input 6 (front: 32).
+46 | network_0/router_2 |   Scheduling switch connection from input 6.0 to output 2.0.
+46 | network_0/router_2 | Completed crossbar traversal for flit 31 from input 6.0 to output 2.0.
+46 | network_0/router_2 | Buffering flit 31 at output 2.
+46 | network_0/router_2 | Completed crossbar traversal for flit 29 from input 0.0 to output 6.0.
+46 | network_0/router_2 | Buffering flit 29 at output 6.
+46 | network_0/router_3 | Beginning switch allocation for VC 0 at input 1 (front: 33).
+46 | network_0/router_3 |   VC 0 at output 6 is full.
+46 | network_0/router_3 | Completed switch allocation for VC 0 at input 1 (front: 33).
+46 | network_0/router_3 |   No output port allocated.
+46 | network_0/network_0_fchan_egress9 | Completed channel traversal for flit 17.
+46 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 30.
+46 | network_0/network_0_fchan_10 | Completed channel traversal for flit 28.
+46 | network_0/router_0 | Sending flit 18 to channel at output 6.
+46 | network_0/router_2 | Sending flit 31 to channel at output 2.
+46 | network_0/router_2 | Sending flit 29 to channel at output 6.
+47 | node9 | Ejecting flit 17 (packet 3) from VC 0.
+47 | node10 | Ejecting flit 30 (packet 6) from VC 0.
+47 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 31 with delay 1.
+47 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 18 with delay 1.
+47 | network_0/network_0_fchan_10 | Beginning channel traversal for flit 29 with delay 1.
+47 | network_0/router_3 | Received flit 28 from channel at input 6.
+47 | traffic_manager | Selected output VC 0 is full for flit 23.
+47 | node9 | Injecting credit for VC 0 into subnet 0.
+47 | node9 | Retiring flit 17 (packet 3, src = 0, dest = -1, hops = 2, flat = 19).
+47 | node10 | Injecting credit for VC 0 into subnet 0.
+47 | node10 | Retiring flit 30 (packet 6, src = 13, dest = 10, hops = 2, flat = 10).
+47 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+47 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (empty).
+47 | network_0/router_0 | Beginning crossbar traversal for flit 19 from input 0.0 to output 6.0.
+47 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+47 | network_0/router_0 |   No output VC allocated.
+47 | network_0/router_0 | Completed crossbar traversal for flit 19 from input 0.0 to output 6.0.
+47 | network_0/router_0 | Buffering flit 19 at output 6.
+47 | network_0/router_2 | Beginning crossbar traversal for flit 32 from input 6.0 to output 2.0.
+47 | network_0/router_2 | Completed crossbar traversal for flit 32 from input 6.0 to output 2.0.
+47 | network_0/router_2 | Buffering flit 32 at output 2.
+47 | network_0/router_3 | Adding flit 28 to VC 0 at input 6 (state: active, empty).
+47 | network_0/router_3 | Beginning switch allocation for VC 0 at input 1 (front: 33).
+47 | network_0/router_3 |   Requesting output 6.0 (non-spec, pri: 0).
+47 | network_0/router_3 | Beginning switch allocation for VC 0 at input 6 (front: 28).
+47 | network_0/router_3 |   Requesting output 2.0 (non-spec, pri: 0).
+47 | network_0/router_3/sw_allocator | Input requests = [ 1 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 1@0 ]  ].
+47 | network_0/router_3/sw_allocator | Input grants = [ 1 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 1  ].
+47 | network_0/router_3 | Assigning output 6.0 to VC 0 at input 1.0.
+47 | network_0/router_3 | Assigning output 2.0 to VC 0 at input 6.0.
+47 | network_0/router_3 | Completed switch allocation for VC 0 at input 1 (front: 33).
+47 | network_0/router_3 |   Scheduling switch connection from input 1.0 to output 6.0.
+47 | network_0/router_3 | Completed switch allocation for VC 0 at input 6 (front: 28).
+47 | network_0/router_3 |   Scheduling switch connection from input 6.0 to output 2.0.
+47 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 31.
+47 | network_0/network_0_fchan_2 | Completed channel traversal for flit 18.
+47 | network_0/network_0_fchan_10 | Completed channel traversal for flit 29.
+47 | network_0/router_0 | Sending flit 19 to channel at output 6.
+47 | network_0/router_2 | Sending flit 32 to channel at output 2.
+48 | node10 | Ejecting flit 31 (packet 6) from VC 0.
+48 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 32 with delay 1.
+48 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 19 with delay 1.
+48 | network_0/router_2 | Received flit 18 from channel at input 4.
+48 | network_0/router_3 | Received flit 29 from channel at input 6.
+48 | traffic_manager | Selected output VC 0 is full for flit 23.
+48 | node10 | Injecting credit for VC 0 into subnet 0.
+48 | node10 | Retiring flit 31 (packet 6, src = 13, dest = -1, hops = 2, flat = 10).
+48 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+48 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (empty).
+48 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+48 | network_0/router_0 |   No output VC allocated.
+48 | network_0/router_2 | Adding flit 18 to VC 0 at input 4 (state: active, empty).
+48 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 18).
+48 | network_0/router_2 |   Requesting output 1.0 (non-spec, pri: 0).
+48 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 1@0 ]  ], output requests = [ 1 -> [ 4@0 ]  ].
+48 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 1  ], output grants = [ 1 -> 4  ].
+48 | network_0/router_2 | Assigning output 1.0 to VC 0 at input 4.0.
+48 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 18).
+48 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 1.0.
+48 | network_0/router_3 | Adding flit 29 to VC 0 at input 6 (state: active, empty).
+48 | network_0/router_3 | Beginning switch allocation for VC 0 at input 1 (front: 34).
+48 | network_0/router_3 |   Requesting output 6.0 (non-spec, pri: 0).
+48 | network_0/router_3 | Beginning switch allocation for VC 0 at input 6 (front: 29).
+48 | network_0/router_3 |   Requesting output 2.0 (non-spec, pri: 0).
+48 | network_0/router_3/sw_allocator | Input requests = [ 1 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 1@0 ]  ].
+48 | network_0/router_3/sw_allocator | Input grants = [ 1 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 1  ].
+48 | network_0/router_3 | Assigning output 6.0 to VC 0 at input 1.0.
+48 | network_0/router_3 | Assigning output 2.0 to VC 0 at input 6.0.
+48 | network_0/router_3 | Beginning crossbar traversal for flit 33 from input 1.0 to output 6.0.
+48 | network_0/router_3 | Beginning crossbar traversal for flit 28 from input 6.0 to output 2.0.
+48 | network_0/router_3 | Completed switch allocation for VC 0 at input 1 (front: 34).
+48 | network_0/router_3 |   Scheduling switch connection from input 1.0 to output 6.0.
+48 | network_0/router_3 | Completed switch allocation for VC 0 at input 6 (front: 29).
+48 | network_0/router_3 |   Scheduling switch connection from input 6.0 to output 2.0.
+48 | network_0/router_3 | Completed crossbar traversal for flit 33 from input 1.0 to output 6.0.
+48 | network_0/router_3 | Buffering flit 33 at output 6.
+48 | network_0/router_3 | Completed crossbar traversal for flit 28 from input 6.0 to output 2.0.
+48 | network_0/router_3 | Buffering flit 28 at output 2.
+48 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 32.
+48 | network_0/network_0_fchan_2 | Completed channel traversal for flit 19.
+48 | network_0/router_3 | Sending flit 28 to channel at output 2.
+48 | network_0/router_3 | Sending flit 33 to channel at output 6.
+49 | node10 | Ejecting flit 32 (packet 6) from VC 0.
+49 | network_0/network_0_fchan_egress14 | Beginning channel traversal for flit 28 with delay 1.
+49 | network_0/network_0_fchan_14 | Beginning channel traversal for flit 33 with delay 1.
+49 | network_0/router_2 | Received flit 19 from channel at input 4.
+49 | traffic_manager | Selected output VC 0 is full for flit 23.
+49 | node10 | Injecting credit for VC 0 into subnet 0.
+49 | node10 | Retiring flit 32 (packet 6, src = 13, dest = -1, hops = 2, flat = 10).
+49 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+49 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (empty).
+49 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+49 | network_0/router_0 |   No output VC allocated.
+49 | network_0/router_2 | Adding flit 19 to VC 0 at input 4 (state: active, empty).
+49 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 19).
+49 | network_0/router_2 |   Requesting output 1.0 (non-spec, pri: 0).
+49 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 1@0 ]  ], output requests = [ 1 -> [ 4@0 ]  ].
+49 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 1  ], output grants = [ 1 -> 4  ].
+49 | network_0/router_2 | Assigning output 1.0 to VC 0 at input 4.0.
+49 | network_0/router_2 | Beginning crossbar traversal for flit 18 from input 4.0 to output 1.0.
+49 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 19).
+49 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 1.0.
+49 | network_0/router_2 | Completed crossbar traversal for flit 18 from input 4.0 to output 1.0.
+49 | network_0/router_2 | Buffering flit 18 at output 1.
+49 | network_0/router_3 | Beginning crossbar traversal for flit 34 from input 1.0 to output 6.0.
+49 | network_0/router_3 | Beginning crossbar traversal for flit 29 from input 6.0 to output 2.0.
+49 | network_0/router_3 | Completed crossbar traversal for flit 34 from input 1.0 to output 6.0.
+49 | network_0/router_3 | Buffering flit 34 at output 6.
+49 | network_0/router_3 | Completed crossbar traversal for flit 29 from input 6.0 to output 2.0.
+49 | network_0/router_3 | Buffering flit 29 at output 2.
+49 | network_0/network_0_fchan_egress14 | Completed channel traversal for flit 28.
+49 | network_0/network_0_fchan_14 | Completed channel traversal for flit 33.
+49 | network_0/router_2 | Sending flit 18 to channel at output 1.
+49 | network_0/router_3 | Sending flit 29 to channel at output 2.
+49 | network_0/router_3 | Sending flit 34 to channel at output 6.
+50 | node14 | Ejecting flit 28 (packet 5) from VC 0.
+50 | network_0/network_0_fchan_egress9 | Beginning channel traversal for flit 18 with delay 1.
+50 | network_0/network_0_fchan_egress14 | Beginning channel traversal for flit 29 with delay 1.
+50 | network_0/network_0_fchan_14 | Beginning channel traversal for flit 34 with delay 1.
+50 | network_0/router_2 | Received flit 33 from channel at input 6.
+50 | traffic_manager | Selected output VC 0 is full for flit 23.
+50 | node14 | Injecting credit for VC 0 into subnet 0.
+50 | node14 | Retiring flit 28 (packet 5, src = 8, dest = -1, hops = 2, flat = 11).
+50 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+50 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (empty).
+50 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+50 | network_0/router_0 |   No output VC allocated.
+50 | network_0/router_2 | Adding flit 33 to VC 0 at input 6 (state: active, empty).
+50 | network_0/router_2 | Beginning switch allocation for VC 0 at input 6 (front: 33).
+50 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+50 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 4@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  4 -> [ 0@0 ]  ].
+50 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 4  6 -> 2  ], output grants = [ 2 -> 6  4 -> 0  ].
+50 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 6.0.
+50 | network_0/router_2 | Beginning crossbar traversal for flit 19 from input 4.0 to output 1.0.
+50 | network_0/router_2 | Completed switch allocation for VC 0 at input 6 (front: 33).
+50 | network_0/router_2 |   Scheduling switch connection from input 6.0 to output 2.0.
+50 | network_0/router_2 | Completed crossbar traversal for flit 19 from input 4.0 to output 1.0.
+50 | network_0/router_2 | Buffering flit 19 at output 1.
+50 | network_0/network_0_fchan_egress9 | Completed channel traversal for flit 18.
+50 | network_0/network_0_fchan_egress14 | Completed channel traversal for flit 29.
+50 | network_0/network_0_fchan_14 | Completed channel traversal for flit 34.
+50 | network_0/router_2 | Sending flit 19 to channel at output 1.
+51 | node9 | Ejecting flit 18 (packet 3) from VC 0.
+51 | node14 | Ejecting flit 29 (packet 5) from VC 0.
+51 | network_0/network_0_fchan_egress9 | Beginning channel traversal for flit 19 with delay 1.
+51 | network_0/router_2 | Received flit 34 from channel at input 6.
+51 | traffic_manager | Selected output VC 0 is full for flit 23.
+51 | node9 | Injecting credit for VC 0 into subnet 0.
+51 | node9 | Retiring flit 18 (packet 3, src = 0, dest = -1, hops = 2, flat = 11).
+51 | node14 | Injecting credit for VC 0 into subnet 0.
+51 | node14 | Retiring flit 29 (packet 5, src = 8, dest = -1, hops = 2, flat = 11).
+51 | node14 | Retiring packet 5 (plat = 17, nlat = 17, frag = 3, src = 8, dest = 14).
+51 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+51 | network_0/router_0 |   VC 0 at output 6 is in use by VC 0 at input 0 (empty).
+51 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+51 | network_0/router_0 |   No output VC allocated.
+51 | network_0/router_2 | Adding flit 34 to VC 0 at input 6 (state: active, empty).
+51 | network_0/router_2 | Beginning switch allocation for VC 0 at input 6 (front: 34).
+51 | network_0/router_2 |   Requesting output 2.0 (non-spec, pri: 0).
+51 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 4@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  4 -> [ 0@0 ]  ].
+51 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 4  6 -> 2  ], output grants = [ 2 -> 6  4 -> 0  ].
+51 | network_0/router_2 | Assigning output 2.0 to VC 0 at input 6.0.
+51 | network_0/router_2 | Beginning crossbar traversal for flit 33 from input 6.0 to output 2.0.
+51 | network_0/router_2 | Completed switch allocation for VC 0 at input 6 (front: 34).
+51 | network_0/router_2 |   Scheduling switch connection from input 6.0 to output 2.0.
+51 | network_0/router_2 | Completed crossbar traversal for flit 33 from input 6.0 to output 2.0.
+51 | network_0/router_2 | Buffering flit 33 at output 2.
+51 | network_0/network_0_fchan_egress9 | Completed channel traversal for flit 19.
+51 | network_0/router_2 | Sending flit 33 to channel at output 2.
+52 | node9 | Ejecting flit 19 (packet 3) from VC 0.
+52 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 33 with delay 1.
+52 | traffic_manager | Selected output VC 0 is full for flit 23.
+52 | node9 | Injecting credit for VC 0 into subnet 0.
+52 | node9 | Retiring flit 19 (packet 3, src = 0, dest = -1, hops = 2, flat = 11).
+52 | node9 | Retiring packet 3 (plat = 26, nlat = 26, frag = 3, src = 0, dest = 9).
+52 | network_0/router_0 | Beginning VC allocation for VC 0 at input 3 (front: 20).
+52 | network_0/router_0 |   Requesting VC 0 at output 6 (in_pri: 0, out_pri: 0).
+52 | network_0/router_0/vc_allocator | Input requests = [ 3 -> [ 6@0 ]  ], output requests = [ 6 -> [ 3@0 ]  ].
+52 | network_0/router_0/vc_allocator | Input grants = [ 3 -> 6  ], output grants = [ 6 -> 3  ].
+52 | network_0/router_0 | Assigning VC 0 at output 6 to VC 0 at input 3.
+52 | network_0/router_0 | Completed VC allocation for VC 0 at input 3 (front: 20).
+52 | network_0/router_0 |   Acquiring assigned VC 0 at output 6.
+52 | network_0/router_0/buf_3/vc_0 | Changing state from vc_alloc to active.
+52 | network_0/router_2 | Beginning crossbar traversal for flit 34 from input 6.0 to output 2.0.
+52 | network_0/router_2 | Completed crossbar traversal for flit 34 from input 6.0 to output 2.0.
+52 | network_0/router_2 | Buffering flit 34 at output 2.
+52 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 33.
+52 | network_0/router_2 | Sending flit 34 to channel at output 2.
+53 | node10 | Ejecting flit 33 (packet 6) from VC 0.
+53 | network_0/network_0_fchan_egress10 | Beginning channel traversal for flit 34 with delay 1.
+53 | traffic_manager | Selected output VC 0 is full for flit 23.
+53 | node10 | Injecting credit for VC 0 into subnet 0.
+53 | node10 | Retiring flit 33 (packet 6, src = 13, dest = -1, hops = 2, flat = 11).
+53 | network_0/router_0 | Beginning switch allocation for VC 0 at input 3 (front: 20).
+53 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+53 | network_0/router_0/sw_allocator | Input requests = [ 3 -> [ 6@0 ]  ], output requests = [ 6 -> [ 3@0 ]  ].
+53 | network_0/router_0/sw_allocator | Input grants = [ 3 -> 6  ], output grants = [ 6 -> 3  ].
+53 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 3.0.
+53 | network_0/router_0 | Completed switch allocation for VC 0 at input 3 (front: 20).
+53 | network_0/router_0 |   Scheduling switch connection from input 3.0 to output 6.0.
+53 | network_0/router_0 | Updating lookahead routing information for flit 20.
+53 | network_0/network_0_fchan_egress10 | Completed channel traversal for flit 34.
+54 | node10 | Ejecting flit 34 (packet 6) from VC 0.
+54 | traffic_manager | Selected output VC 0 is full for flit 23.
+54 | node10 | Injecting credit for VC 0 into subnet 0.
+54 | node10 | Retiring flit 34 (packet 6, src = 13, dest = -1, hops = 2, flat = 11).
+54 | node10 | Retiring packet 6 (plat = 17, nlat = 17, frag = 3, src = 13, dest = 10).
+54 | network_0/router_0 | Beginning switch allocation for VC 0 at input 3 (front: 21).
+54 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+54 | network_0/router_0/sw_allocator | Input requests = [ 3 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 3@0 ]  ].
+54 | network_0/router_0/sw_allocator | Input grants = [ 3 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 3  ].
+54 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 3.0.
+54 | network_0/router_0 | Beginning crossbar traversal for flit 20 from input 3.0 to output 6.0.
+54 | network_0/router_0 | Completed switch allocation for VC 0 at input 3 (front: 21).
+54 | network_0/router_0 |   Scheduling switch connection from input 3.0 to output 6.0.
+54 | network_0/router_0 | Completed crossbar traversal for flit 20 from input 3.0 to output 6.0.
+54 | network_0/router_0 | Buffering flit 20 at output 6.
+54 | network_0/router_0 | Sending flit 20 to channel at output 6.
+55 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 20 with delay 1.
+55 | node3 | Injecting flit 23 into subnet 0 at time 55 with priority 0.
+55 | network_0/router_0 | Beginning switch allocation for VC 0 at input 3 (front: 22).
+55 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+55 | network_0/router_0/sw_allocator | Input requests = [ 3 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 3@0 ]  ].
+55 | network_0/router_0/sw_allocator | Input grants = [ 3 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 3  ].
+55 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 3.0.
+55 | network_0/router_0 | Beginning crossbar traversal for flit 21 from input 3.0 to output 6.0.
+55 | network_0/router_0 | Completed switch allocation for VC 0 at input 3 (front: 22).
+55 | network_0/router_0 |   Scheduling switch connection from input 3.0 to output 6.0.
+55 | network_0/router_0 | Completed crossbar traversal for flit 21 from input 3.0 to output 6.0.
+55 | network_0/router_0 | Buffering flit 21 at output 6.
+55 | network_0/network_0_fchan_2 | Completed channel traversal for flit 20.
+55 | network_0/router_0 | Sending flit 21 to channel at output 6.
+56 | network_0/network_0_fchan_ingress3 | Beginning channel traversal for flit 23 with delay 1.
+56 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 21 with delay 1.
+56 | network_0/router_2 | Received flit 20 from channel at input 4.
+56 | node3 | Injecting flit 24 into subnet 0 at time 56 with priority 0.
+56 | network_0/router_0 | Beginning crossbar traversal for flit 22 from input 3.0 to output 6.0.
+56 | network_0/router_0 | Completed crossbar traversal for flit 22 from input 3.0 to output 6.0.
+56 | network_0/router_0 | Buffering flit 22 at output 6.
+56 | network_0/router_2 | Adding flit 20 to VC 0 at input 4 (state: idle, empty).
+56 | network_0/router_2 | Using precomputed lookahead routing information for VC 0 at input 4 (front: 20).
+56 | network_0/router_2/buf_4/vc_0 | Changing state from idle to vc_alloc.
+56 | network_0/router_2 | Beginning VC allocation for VC 0 at input 4 (front: 20).
+56 | network_0/router_2 |   Requesting VC 0 at output 0 (in_pri: 0, out_pri: 0).
+56 | network_0/router_2/vc_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+56 | network_0/router_2/vc_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+56 | network_0/router_2 | Assigning VC 0 at output 0 to VC 0 at input 4.
+56 | network_0/router_2 | Completed VC allocation for VC 0 at input 4 (front: 20).
+56 | network_0/router_2 |   Acquiring assigned VC 0 at output 0.
+56 | network_0/router_2/buf_4/vc_0 | Changing state from vc_alloc to active.
+56 | network_0/network_0_fchan_ingress3 | Completed channel traversal for flit 23.
+56 | network_0/network_0_fchan_2 | Completed channel traversal for flit 21.
+56 | network_0/router_0 | Sending flit 22 to channel at output 6.
+57 | network_0/network_0_fchan_ingress3 | Beginning channel traversal for flit 24 with delay 1.
+57 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 22 with delay 1.
+57 | network_0/router_0 | Received flit 23 from channel at input 3.
+57 | network_0/router_2 | Received flit 21 from channel at input 4.
+57 | network_0/router_0 | Adding flit 23 to VC 0 at input 3 (state: active, empty).
+57 | network_0/router_0 | Beginning switch allocation for VC 0 at input 3 (front: 23).
+57 | network_0/router_0 |   VC 0 at output 6 is full.
+57 | network_0/router_0 | Completed switch allocation for VC 0 at input 3 (front: 23).
+57 | network_0/router_0 |   No output port allocated.
+57 | network_0/router_2 | Adding flit 21 to VC 0 at input 4 (state: active, front: 20).
+57 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 20).
+57 | network_0/router_2 |   Requesting output 0.0 (non-spec, pri: 0).
+57 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 4@0 ]  4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  4 -> [ 0@0 ]  ].
+57 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 4  4 -> 0  ], output grants = [ 0 -> 4  4 -> 0  ].
+57 | network_0/router_2 | Assigning output 0.0 to VC 0 at input 4.0.
+57 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 20).
+57 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 0.0.
+57 | network_0/network_0_fchan_ingress3 | Completed channel traversal for flit 24.
+57 | network_0/network_0_fchan_2 | Completed channel traversal for flit 22.
+58 | network_0/router_0 | Received flit 24 from channel at input 3.
+58 | network_0/router_2 | Received flit 22 from channel at input 4.
+58 | network_0/router_0 | Adding flit 24 to VC 0 at input 3 (state: active, front: 23).
+58 | network_0/router_0 | Beginning switch allocation for VC 0 at input 3 (front: 23).
+58 | network_0/router_0 |   VC 0 at output 6 is full.
+58 | network_0/router_0 | Completed switch allocation for VC 0 at input 3 (front: 23).
+58 | network_0/router_0 |   No output port allocated.
+58 | network_0/router_2 | Adding flit 22 to VC 0 at input 4 (state: active, front: 21).
+58 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 21).
+58 | network_0/router_2 |   Requesting output 0.0 (non-spec, pri: 0).
+58 | network_0/router_2/sw_allocator | Input requests = [ 0 -> [ 4@0 ]  4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  4 -> [ 0@0 ]  ].
+58 | network_0/router_2/sw_allocator | Input grants = [ 0 -> 4  4 -> 0  ], output grants = [ 0 -> 4  4 -> 0  ].
+58 | network_0/router_2 | Assigning output 0.0 to VC 0 at input 4.0.
+58 | network_0/router_2 | Beginning crossbar traversal for flit 20 from input 4.0 to output 0.0.
+58 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 21).
+58 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 0.0.
+58 | network_0/router_2 | Completed crossbar traversal for flit 20 from input 4.0 to output 0.0.
+58 | network_0/router_2 | Buffering flit 20 at output 0.
+58 | network_0/router_2 | Sending flit 20 to channel at output 0.
+59 | network_0/network_0_fchan_egress8 | Beginning channel traversal for flit 20 with delay 1.
+59 | network_0/router_0 | Beginning switch allocation for VC 0 at input 3 (front: 23).
+59 | network_0/router_0 |   VC 0 at output 6 is full.
+59 | network_0/router_0 | Completed switch allocation for VC 0 at input 3 (front: 23).
+59 | network_0/router_0 |   No output port allocated.
+59 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 22).
+59 | network_0/router_2 |   Requesting output 0.0 (non-spec, pri: 0).
+59 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+59 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+59 | network_0/router_2 | Assigning output 0.0 to VC 0 at input 4.0.
+59 | network_0/router_2 | Beginning crossbar traversal for flit 21 from input 4.0 to output 0.0.
+59 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 22).
+59 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 0.0.
+59 | network_0/router_2 | Completed crossbar traversal for flit 21 from input 4.0 to output 0.0.
+59 | network_0/router_2 | Buffering flit 21 at output 0.
+59 | network_0/network_0_fchan_egress8 | Completed channel traversal for flit 20.
+59 | network_0/router_2 | Sending flit 21 to channel at output 0.
+60 | node8 | Ejecting flit 20 (packet 4) from VC 0.
+60 | network_0/network_0_fchan_egress8 | Beginning channel traversal for flit 21 with delay 1.
+60 | node8 | Injecting credit for VC 0 into subnet 0.
+60 | node8 | Retiring flit 20 (packet 4, src = 3, dest = 8, hops = 2, flat = 28).
+60 | network_0/router_0 | Beginning switch allocation for VC 0 at input 3 (front: 23).
+60 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+60 | network_0/router_0/sw_allocator | Input requests = [ 3 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 3@0 ]  ].
+60 | network_0/router_0/sw_allocator | Input grants = [ 3 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 3  ].
+60 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 3.0.
+60 | network_0/router_0 | Completed switch allocation for VC 0 at input 3 (front: 23).
+60 | network_0/router_0 |   Scheduling switch connection from input 3.0 to output 6.0.
+60 | network_0/router_2 | Beginning crossbar traversal for flit 22 from input 4.0 to output 0.0.
+60 | network_0/router_2 | Completed crossbar traversal for flit 22 from input 4.0 to output 0.0.
+60 | network_0/router_2 | Buffering flit 22 at output 0.
+60 | network_0/network_0_fchan_egress8 | Completed channel traversal for flit 21.
+60 | network_0/router_2 | Sending flit 22 to channel at output 0.
+61 | node8 | Ejecting flit 21 (packet 4) from VC 0.
+61 | network_0/network_0_fchan_egress8 | Beginning channel traversal for flit 22 with delay 1.
+61 | node8 | Injecting credit for VC 0 into subnet 0.
+61 | node8 | Retiring flit 21 (packet 4, src = 3, dest = -1, hops = 2, flat = 28).
+61 | network_0/router_0 | Beginning switch allocation for VC 0 at input 3 (front: 24).
+61 | network_0/router_0 |   Requesting output 6.0 (non-spec, pri: 0).
+61 | network_0/router_0/sw_allocator | Input requests = [ 3 -> [ 6@0 ]  6 -> [ 2@0 ]  ], output requests = [ 2 -> [ 6@0 ]  6 -> [ 3@0 ]  ].
+61 | network_0/router_0/sw_allocator | Input grants = [ 3 -> 6  6 -> 2  ], output grants = [ 2 -> 6  6 -> 3  ].
+61 | network_0/router_0 | Assigning output 6.0 to VC 0 at input 3.0.
+61 | network_0/router_0 | Beginning crossbar traversal for flit 23 from input 3.0 to output 6.0.
+61 | network_0/router_0 | Completed switch allocation for VC 0 at input 3 (front: 24).
+61 | network_0/router_0 |   Scheduling switch connection from input 3.0 to output 6.0.
+61 | network_0/router_0 | Completed crossbar traversal for flit 23 from input 3.0 to output 6.0.
+61 | network_0/router_0 | Buffering flit 23 at output 6.
+61 | network_0/network_0_fchan_egress8 | Completed channel traversal for flit 22.
+61 | network_0/router_0 | Sending flit 23 to channel at output 6.
+62 | node8 | Ejecting flit 22 (packet 4) from VC 0.
+62 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 23 with delay 1.
+62 | node8 | Injecting credit for VC 0 into subnet 0.
+62 | node8 | Retiring flit 22 (packet 4, src = 3, dest = -1, hops = 2, flat = 28).
+62 | network_0/router_0 | Beginning crossbar traversal for flit 24 from input 3.0 to output 6.0.
+62 | network_0/router_0 | Completed crossbar traversal for flit 24 from input 3.0 to output 6.0.
+62 | network_0/router_0 | Buffering flit 24 at output 6.
+62 | network_0/network_0_fchan_2 | Completed channel traversal for flit 23.
+62 | network_0/router_0 | Sending flit 24 to channel at output 6.
+63 | network_0/network_0_fchan_2 | Beginning channel traversal for flit 24 with delay 1.
+63 | network_0/router_2 | Received flit 23 from channel at input 4.
+63 | network_0/router_2 | Adding flit 23 to VC 0 at input 4 (state: active, empty).
+63 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 23).
+63 | network_0/router_2 |   Requesting output 0.0 (non-spec, pri: 0).
+63 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+63 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+63 | network_0/router_2 | Assigning output 0.0 to VC 0 at input 4.0.
+63 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 23).
+63 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 0.0.
+63 | network_0/network_0_fchan_2 | Completed channel traversal for flit 24.
+64 | network_0/router_2 | Received flit 24 from channel at input 4.
+64 | network_0/router_2 | Adding flit 24 to VC 0 at input 4 (state: active, empty).
+64 | network_0/router_2 | Beginning switch allocation for VC 0 at input 4 (front: 24).
+64 | network_0/router_2 |   Requesting output 0.0 (non-spec, pri: 0).
+64 | network_0/router_2/sw_allocator | Input requests = [ 4 -> [ 0@0 ]  ], output requests = [ 0 -> [ 4@0 ]  ].
+64 | network_0/router_2/sw_allocator | Input grants = [ 4 -> 0  ], output grants = [ 0 -> 4  ].
+64 | network_0/router_2 | Assigning output 0.0 to VC 0 at input 4.0.
+64 | network_0/router_2 | Beginning crossbar traversal for flit 23 from input 4.0 to output 0.0.
+64 | network_0/router_2 | Completed switch allocation for VC 0 at input 4 (front: 24).
+64 | network_0/router_2 |   Scheduling switch connection from input 4.0 to output 0.0.
+64 | network_0/router_2 | Completed crossbar traversal for flit 23 from input 4.0 to output 0.0.
+64 | network_0/router_2 | Buffering flit 23 at output 0.
+64 | network_0/router_2 | Sending flit 23 to channel at output 0.
+65 | network_0/network_0_fchan_egress8 | Beginning channel traversal for flit 23 with delay 1.
+65 | network_0/router_2 | Beginning crossbar traversal for flit 24 from input 4.0 to output 0.0.
+65 | network_0/router_2 | Completed crossbar traversal for flit 24 from input 4.0 to output 0.0.
+65 | network_0/router_2 | Buffering flit 24 at output 0.
+65 | network_0/network_0_fchan_egress8 | Completed channel traversal for flit 23.
+65 | network_0/router_2 | Sending flit 24 to channel at output 0.
+66 | node8 | Ejecting flit 23 (packet 4) from VC 0.
+66 | network_0/network_0_fchan_egress8 | Beginning channel traversal for flit 24 with delay 1.
+66 | node8 | Injecting credit for VC 0 into subnet 0.
+66 | node8 | Retiring flit 23 (packet 4, src = 3, dest = -1, hops = 2, flat = 11).
+66 | network_0/network_0_fchan_egress8 | Completed channel traversal for flit 24.
+67 | node8 | Ejecting flit 24 (packet 4) from VC 0.
+67 | node8 | Injecting credit for VC 0 into subnet 0.
+67 | node8 | Retiring flit 24 (packet 4, src = 3, dest = -1, hops = 2, flat = 11).
+67 | node8 | Retiring packet 4 (plat = 35, nlat = 35, frag = 3, src = 3, dest = 8).

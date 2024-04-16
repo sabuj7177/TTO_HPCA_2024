@@ -1,0 +1,1230 @@
+BEGIN Configuration File: examples/anynet/anynet_config_edited
+// $Id: singleconfig 1535 2009-09-16 16:21:01Z dub $
+
+// Copyright (c) 2007-2009, Trustees of The Leland Stanford Junior University
+// All rights reserved.
+// 
+// Redistribution and use in source and binary forms, with or without 
+// modification, are permitted provided that the following conditions are met:
+// 
+// Redistributions of source code must retain the above copyright notice, this 
+// list of conditions and the following disclaimer.
+// Redistributions in binary form must reproduce the above copyright notice, 
+// this list of conditions and the following disclaimer in the documentation 
+// and/or other materials provided with the distribution.
+// Neither the name of the Stanford University nor the names of its contributors
+// may be used to endorse or promote products derived from this software without
+// specific prior written permission.
+// 
+// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
+// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
+// POSSIBILITY OF SUCH DAMAGE.
+
+//A single cross 10X10 cross bar under injection mode
+
+topology = anynet;
+
+network_file = /home/abhiyashhodge/Research/booksim2/src/examples/anynet/anynet_file_2x1mesh;
+
+// Routing
+routing_function = min;
+
+// Flow Control
+num_vcs     = 1;
+vc_buf_size = 3;
+wait_for_tail_credit = 1;
+
+
+// Router architecture
+vc_allocator = islip;
+sw_allocator = islip;
+alloc_iters  = 1;
+//const_flits_per_packet = 1;
+
+credit_delay   = 1;
+routing_delay  = 0;
+vc_alloc_delay = 1;
+sw_alloc_delay = 1;
+
+input_speedup     = 1;
+output_speedup    = 1;
+internal_speedup  = 1.0;
+
+
+traffic = uniform;
+
+use_read_write = 0;
+
+sample_period = 10000;
+injection_rate = 0.01;
+
+
+//vc_allocator = separable_input_first; 
+//sw_allocator = separable_input_first;
+//alloc_iters  = 1;
+
+
+watch_file = abc.txt;
+watch_out = abc.txt;
+//watch_flits = {0,1};
+//watch_all_flits = 1;
+watch_packets = {0,1,2};
+//watch_packets = {0};
+// watch_all_packets = 1;
+// virtual_cut_through = 0;
+
+END Configuration File: examples/anynet/anynet_config_edited
+in read file
+in read line
+ in do while 
+ in switch HEAD_TYPE. State changed too :  1
+ Routing List[0] :  
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch HEAD_ID. State changed too :  2
+ Routing List[0] :  
+Router 0
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+Added...... 
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+Added...... 
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+Added...... 
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+Added...... 
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ Before  HEyyyyyyyyyyyyyyyyyyyyyyy 1
+ Before  HEyyyyyyyyyyyyyyyyyyyyyyy 2
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+Router 1
+ Routing List[1] : ############################################ 
+
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+hella...............................
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+hella...............................
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+in read line
+ in do while 
+ in switch HEAD_TYPE. State changed too :  1
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch HEAD_ID. State changed too :  2
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+Added...... 
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+hella...............................
+	 Node 4 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+Added...... 
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+hella...............................
+	 Node 4 lat 1
+	 Node 5 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+Added...... 
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+hella...............................
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+Added...... 
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+hella...............................
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+	 Node 7 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+	 Node 7 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+	 Node 7 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+hella...............................
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+	 Node 7 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ in switch LINK_WEIGHT. State changed too :  4
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+	 Node 7 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in switch Body_TYPE. State changed too :  3
+ Routing List[0] :  
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+	 Node 7 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+ in do while 
+ HEyyyyyyyyyyyyyyyyyyyyyyy
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+ in switch Body_ID. State changed too :  4
+ Routing List[0] :  
+Router 0
+hella...............................
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+hella...............................
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+	 Node 7 lat 1
+ Routing List[0] : ##################  
+
+ Routing List[1] :  
+Router 0
+	 Node 1 lat 1
+	 Node 1 lat 1
+Router 1
+	 Node 0 lat 1
+	 Node 0 lat 1
+ Routing List[1] : ############################################ 
+
+
+
+========================Network File Parsed=================
+******************node listing**********************
+Node 0	Router 0
+Node 1	Router 0
+Node 2	Router 0
+Node 3	Router 0
+Node 4	Router 1
+Node 5	Router 1
+Node 6	Router 1
+Node 7	Router 1
+
+****************router to node listing*************
+Router 0
+	 Node 0 lat 1
+	 Node 1 lat 1
+	 Node 2 lat 1
+	 Node 3 lat 1
+Router 1
+	 Node 4 lat 1
+	 Node 5 lat 1
+	 Node 6 lat 1
+	 Node 7 lat 1
+
+*****************router to router listing************
+Router 0
+	 Router 1 lat 1
+	 Router 1 lat 1
+Router 1
+	 Router 0 lat 1
+	 Router 0 lat 1
+==========================Node to Router =====================
+router 0 radix 6
+	 connected to node 0 at outport 0 lat 1
+	 connected to node 1 at outport 1 lat 1
+	 connected to node 2 at outport 2 lat 1
+	 connected to node 3 at outport 3 lat 1
+router 1 radix 6
+	 connected to node 4 at outport 0 lat 1
+	 connected to node 5 at outport 1 lat 1
+	 connected to node 6 at outport 2 lat 1
+	 connected to node 7 at outport 3 lat 1
+==========================Router to Router =====================
+router 0
+	 connected to router 1 using link 0 at outport 4 lat 1
+	 connected to router 1 using link 1 at outport 5 lat 1
+router 1
+	 connected to router 0 using link 2 at outport 4 lat 1
+	 connected to router 0 using link 3 at outport 5 lat 1
+========================== Routing table  =====================
+Class 0:
+Packet latency average = 8.51647
+	minimum = 6
+	maximum = 23
+Network latency average = 8.38076
+	minimum = 6
+	maximum = 21
+Slowest packet = 51
+Flit latency average = 8.38076
+	minimum = 6
+	maximum = 21
+Slowest flit = 754
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.0094875
+	minimum = 0.0083 (at node 7)
+	maximum = 0.0107 (at node 2)
+Accepted packet rate average = 0.0094875
+	minimum = 0.008 (at node 6)
+	maximum = 0.0107 (at node 4)
+Injected flit rate average = 0.0094875
+	minimum = 0.0083 (at node 7)
+	maximum = 0.0107 (at node 2)
+Accepted flit rate average= 0.0094875
+	minimum = 0.008 (at node 6)
+	maximum = 0.0107 (at node 4)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 0 (0 measured)
+latency change    = 1
+throughput change = 1
+Class 0:
+Packet latency average = 8.69886
+	minimum = 6
+	maximum = 27
+Network latency average = 8.54987
+	minimum = 6
+	maximum = 27
+Slowest packet = 1398
+Flit latency average = 8.54987
+	minimum = 6
+	maximum = 27
+Slowest flit = 1398
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.0099
+	minimum = 0.00925 (at node 7)
+	maximum = 0.01075 (at node 1)
+Accepted packet rate average = 0.0099
+	minimum = 0.00925 (at node 6)
+	maximum = 0.0108 (at node 4)
+Injected flit rate average = 0.0099
+	minimum = 0.00925 (at node 7)
+	maximum = 0.01075 (at node 1)
+Accepted flit rate average= 0.0099
+	minimum = 0.00925 (at node 6)
+	maximum = 0.0108 (at node 4)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 0 (0 measured)
+latency change    = 0.0209676
+throughput change = 0.0416667
+Class 0:
+Packet latency average = 8.80075
+	minimum = 6
+	maximum = 31
+Network latency average = 8.64757
+	minimum = 6
+	maximum = 28
+Slowest packet = 1996
+Flit latency average = 8.64757
+	minimum = 6
+	maximum = 28
+Slowest flit = 1996
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.0100375
+	minimum = 0.009 (at node 6)
+	maximum = 0.011 (at node 7)
+Accepted packet rate average = 0.0100375
+	minimum = 0.0092 (at node 1)
+	maximum = 0.0116 (at node 7)
+Injected flit rate average = 0.0100375
+	minimum = 0.009 (at node 6)
+	maximum = 0.011 (at node 7)
+Accepted flit rate average= 0.0100375
+	minimum = 0.0092 (at node 1)
+	maximum = 0.0116 (at node 7)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 0 (0 measured)
+latency change    = 0.0115767
+throughput change = 0.0136986
+Warmed up ...Time used is 30000 cycles
+Class 0:
+Packet latency average = 8.56774
+	minimum = 6
+	maximum = 25
+Network latency average = 8.46323
+	minimum = 6
+	maximum = 24
+Slowest packet = 2527
+Flit latency average = 8.46323
+	minimum = 6
+	maximum = 24
+Slowest flit = 2527
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.0096875
+	minimum = 0.008 (at node 2)
+	maximum = 0.011 (at node 5)
+Accepted packet rate average = 0.0096875
+	minimum = 0.0085 (at node 4)
+	maximum = 0.011 (at node 2)
+Injected flit rate average = 0.0096875
+	minimum = 0.008 (at node 2)
+	maximum = 0.011 (at node 5)
+Accepted flit rate average= 0.0096875
+	minimum = 0.0085 (at node 4)
+	maximum = 0.011 (at node 2)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 0 (0 measured)
+latency change    = 0.0271956
+throughput change = 0.036129
+Class 0:
+Packet latency average = 8.53204
+	minimum = 6
+	maximum = 25
+Network latency average = 8.41748
+	minimum = 6
+	maximum = 24
+Slowest packet = 2527
+Flit latency average = 8.41748
+	minimum = 6
+	maximum = 24
+Slowest flit = 2527
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.00965625
+	minimum = 0.00865 (at node 2)
+	maximum = 0.01075 (at node 3)
+Accepted packet rate average = 0.00965625
+	minimum = 0.00845 (at node 7)
+	maximum = 0.01075 (at node 6)
+Injected flit rate average = 0.00965625
+	minimum = 0.00865 (at node 2)
+	maximum = 0.01075 (at node 3)
+Accepted flit rate average= 0.00965625
+	minimum = 0.00845 (at node 7)
+	maximum = 0.01075 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 0 (0 measured)
+latency change    = 0.00418459
+throughput change = 0.00323625
+Class 0:
+Packet latency average = 8.61259
+	minimum = 6
+	maximum = 25
+Network latency average = 8.48711
+	minimum = 6
+	maximum = 24
+Slowest packet = 2527
+Flit latency average = 8.48711
+	minimum = 6
+	maximum = 24
+Slowest flit = 2527
+Fragmentation average = 0
+	minimum = 0
+	maximum = 0
+Injected packet rate average = 0.0098625
+	minimum = 0.00896667 (at node 7)
+	maximum = 0.0111 (at node 3)
+Accepted packet rate average = 0.0098625
+	minimum = 0.00903333 (at node 4)
+	maximum = 0.0108 (at node 6)
+Injected flit rate average = 0.0098625
+	minimum = 0.00896667 (at node 7)
+	maximum = 0.0111 (at node 3)
+Accepted flit rate average= 0.0098625
+	minimum = 0.00903333 (at node 4)
+	maximum = 0.0108 (at node 6)
+Injected packet length average = 1
+Accepted packet length average = 1
+Total in-flight flits = 0 (0 measured)
+latency change    = 0.0093527
+throughput change = 0.0209125
+Draining all recorded packets ...
+Draining remaining packets ...
+Time taken is 60001 cycles
+====== Overall Traffic Statistics ======
+====== Traffic class 0 ======
+Packet latency average = 8.61259 (1 samples)
+	minimum = 6 (1 samples)
+	maximum = 25 (1 samples)
+Network latency average = 8.48711 (1 samples)
+	minimum = 6 (1 samples)
+	maximum = 24 (1 samples)
+Flit latency average = 8.48711 (1 samples)
+	minimum = 6 (1 samples)
+	maximum = 24 (1 samples)
+Fragmentation average = 0 (1 samples)
+	minimum = 0 (1 samples)
+	maximum = 0 (1 samples)
+Injected packet rate average = 0.0098625 (1 samples)
+	minimum = 0.00896667 (1 samples)
+	maximum = 0.0111 (1 samples)
+Accepted packet rate average = 0.0098625 (1 samples)
+	minimum = 0.00903333 (1 samples)
+	maximum = 0.0108 (1 samples)
+Injected flit rate average = 0.0098625 (1 samples)
+	minimum = 0.00896667 (1 samples)
+	maximum = 0.0111 (1 samples)
+Accepted flit rate average = 0.0098625 (1 samples)
+	minimum = 0.00903333 (1 samples)
+	maximum = 0.0108 (1 samples)
+Injected packet size average = 1 (1 samples)
+Accepted packet size average = 1 (1 samples)
+Hops average = 1.50866 (1 samples)
+Total run time 0.0914991
